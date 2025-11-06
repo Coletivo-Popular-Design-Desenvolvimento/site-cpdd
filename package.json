@@ -1,0 +1,22 @@
+{
+  "name": "@cpdd/root",
+  "version": "0.1.0",
+  "private": true,
+  "engines": {
+    "node": ">=22.0.0",
+    "pnpm": ">=9.0.0"
+  },
+  "scripts": {
+    "dev": "pnpm --filter @cpdd/site dev",
+    "build": "pnpm --recursive build",
+    "start": "pnpm --filter @cpdd/site start",
+    "lint": "pnpm --recursive lint",
+    "dev:site": "pnpm --filter @cpdd/site dev",
+    "build:site": "pnpm --filter @cpdd/site build",
+    "build:ui": "pnpm --filter @cpdd/ui build",
+    "type-check": "pnpm --recursive exec tsc --noEmit"
+  },
+  "devDependencies": {
+    "typescript": "^5"
+  }
+}
