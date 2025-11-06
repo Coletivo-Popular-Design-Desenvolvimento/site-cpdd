@@ -2,7 +2,7 @@
 
 import dynamic from 'next/dynamic';
 
-const PrelineScript = dynamic(() => import('./PrelineScript'), {
+const PrelineScript = dynamic(() => import('./PrelineScript.tsx'), {
     ssr: false,
 });
 

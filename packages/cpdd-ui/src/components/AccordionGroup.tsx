@@ -1,4 +1,4 @@
-import AccordionItem from './AccordionItem';
+import AccordionItem from './AccordionItem.tsx';
 
 export default function AccordionGroup() {
     return (
