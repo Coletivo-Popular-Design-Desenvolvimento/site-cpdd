@@ -13,7 +13,6 @@
     "lint": "pnpm --recursive lint",
     "dev:site": "pnpm --filter @cpdd/site dev",
     "build:site": "pnpm --filter @cpdd/site build",
-    "build:ui": "pnpm --filter @cpdd/ui build",
     "type-check": "pnpm --recursive exec tsc --noEmit"
   },
   "devDependencies": {

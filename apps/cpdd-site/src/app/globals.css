@@ -1,6 +1,15 @@
 @import "tailwindcss";
+
+/* Import UI package styles (Preline configuration) */
+@import "../../../../packages/cpdd-ui/src/styles/globals.css";
+
+/* Scan UI package components for Tailwind classes */
+@source "../../../../packages/cpdd-ui/src/**/*.{ts,tsx}";
+
+/* Plugins */
 @plugin "@tailwindcss/forms";
 
+/* Application-specific styles */
 :root {
   --background: #ffffff;
   --foreground: #171717;
