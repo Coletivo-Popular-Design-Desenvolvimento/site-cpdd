@@ -35,7 +35,7 @@ export default function Home() {
         <div className="flex flex-col gap-4 min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
             <h1 className="text-4xl font-bold">Site do CPDD</h1>
 
-            <div className="m-6 space-y-10">
+            <div className="m-6 space-y-10 w-full">
                 <div>
                     <h2 className="mb-2 text-2xl font-semibold">Accordion Group 1</h2>
                     <AccordionGroup items={accordionItems1} />
