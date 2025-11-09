@@ -1,6 +1,9 @@
-export default function AccordionItem(props: any) {
-    const { title, content } = props;
+export interface AccordionItemProps {
+    readonly title: string;
+    readonly content: string;
+}
 
+export default function AccordionItem({ title, content }: AccordionItemProps) {
     return (
         <div className='hs-accordion'>
             <button className='hs-accordion-toggle hs-accordion-active:text-blue-600 py-3 inline-flex items-center gap-x-3 w-full font-semibold text-start text-gray-800 hover:text-gray-500 rounded-lg disabled:opacity-50 disabled:pointer-events-none dark:hs-accordion-active:text-blue-500 dark:text-gray-200 dark:hover:text-gray-400 dark:focus:outline-none dark:focus:text-gray-400'>

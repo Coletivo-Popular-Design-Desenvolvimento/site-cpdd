@@ -4,7 +4,7 @@ import { usePathname } from 'next/navigation';
 import { useEffect } from 'react';
 
 async function loadPreline() {
-    return import('preline/dist/index.js');
+    return import('preline/preline.js');
 }
 
 export default function PrelineScript() {
@@ -12,13 +12,22 @@ export default function PrelineScript() {
 
     useEffect(() => {
         const initPreline = async () => {
-            await loadPreline()
+            await loadPreline();
+            
+            // Inicializa imediatamente após o carregamento
+            if (
+                window.HSStaticMethods &&
+                typeof window.HSStaticMethods.autoInit === 'function'
+            ) {
+                window.HSStaticMethods.autoInit();
+            }
         }
 
         initPreline();
     }, []);
 
     useEffect(() => {
+        // Re-inicializa quando a rota muda
         setTimeout(() => {
             if (
                 window.HSStaticMethods &&
