@@ -7,13 +7,14 @@
     "pnpm": ">=9.0.0"
   },
   "scripts": {
-    "dev": "pnpm --filter @cpdd/site dev",
     "build": "pnpm --recursive build",
-    "start": "pnpm --filter @cpdd/site start",
-    "lint": "pnpm --recursive lint",
-    "dev:site": "pnpm --filter @cpdd/site dev",
     "build:site": "pnpm --filter @cpdd/site build",
-    "type-check": "pnpm --recursive exec tsc --noEmit"
+    "dev": "pnpm --filter @cpdd/site dev",
+    "dev:site": "pnpm --filter @cpdd/site dev",
+    "dev:storybook": "pnpm --filter @cpdd/ui storybook",
+    "lint": "pnpm --recursive lint",
+    "type-check": "pnpm --recursive exec tsc --noEmit",
+    "start": "pnpm --filter @cpdd/site start"
   },
   "devDependencies": {
     "typescript": "^5"
