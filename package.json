@@ -9,12 +9,11 @@
   "scripts": {
     "build": "pnpm --recursive build",
     "build:site": "pnpm --filter @cpdd/site build",
-    "dev": "pnpm --filter @cpdd/site dev",
+    "dev": "pnpm --parallel dev",
     "dev:site": "pnpm --filter @cpdd/site dev",
     "dev:storybook": "pnpm --filter @cpdd/ui storybook",
     "lint": "pnpm --recursive lint",
-    "type-check": "pnpm --recursive exec tsc --noEmit",
-    "start": "pnpm --filter @cpdd/site start"
+    "type-check": "pnpm --recursive exec tsc --noEmit"
   },
   "devDependencies": {
     "typescript": "^5"
