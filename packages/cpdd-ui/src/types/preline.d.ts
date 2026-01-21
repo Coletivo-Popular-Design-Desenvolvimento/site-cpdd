@@ -4,6 +4,12 @@ declare global {
       autoInit: () => void;
     };
   }
+
+  interface GlobalThis {
+    HSStaticMethods?: {
+      autoInit: () => void;
+    };
+  }
 }
 
 export {};
