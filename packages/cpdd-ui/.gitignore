@@ -1,0 +1,14 @@
+# Compiled output
+dist/
+*.tsbuildinfo
+
+# Dependencies
+node_modules/
+
+# IDE
+.vscode/
+.idea/
+
+# Misc
+.DS_Store
+*.log

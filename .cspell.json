@@ -1,0 +1,32 @@
+{
+  "version": "0.2",
+  "ignorePaths": [
+    "**/node_modules/**",
+    "**/dist/**",
+    "**/.turbo/**",
+    "**/build/**",
+    "pnpm-lock.yaml"
+  ],
+  "dictionaries": ["dicionario"],
+  "caseSensitive": false,
+  "dictionaryDefinitions": [
+    {
+      "name": "dicionario",
+      "path": "./.cspell/dicionario.txt",
+      "addWords": true
+    }
+  ],
+  "words": [],
+  "ignoreWords": [],
+  "import": [],
+  "languageSettings": [
+    {
+      "languageId": "markdown",
+      "caseSensitive": false
+    },
+    {
+      "languageId": "javascript",
+      "caseSensitive": false
+    }
+  ]
+}
