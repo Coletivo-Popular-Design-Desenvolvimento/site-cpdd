@@ -1,17 +1,17 @@
 # Site CPDD
 O site é a porta de entrada para nossos camaradas nos conhecerem.
 
-Ambos usando NextJS, React, Preline e Tailwind, com adicional do Storybook no CPDD-UI.
-
 ## Dependências:
 - Node.js >= 22
 - Next.js
+- Vite
 - React
 - TypeScript
 - TailwindCSS
 - Preline
 - Storybooks
 - ESLint
+- Jest
 
 ## Instalando o Projeto
 Você precisa ter instalado na sua maquina: 
@@ -53,8 +53,8 @@ Demais scripts podem ser encontrados no packages.json na paz raiz do projeto
 
 ## Estrutura do Projeto
 Monorepo com 2 aplicações: 
-- apps/cpdd-site: Contém os arquivos, códigos e conteúdos do site.
-- apps/package/cpdd-ui: Componentes do Design System usados no site. Futuramente terá um repositório próprio.
+- apps/cpdd-site: Contém os arquivos, códigos e conteúdos do site. Criado com NextJS, Preline e Tailwind 
+- apps/package/cpdd-ui: Componentes do Design System usados no site. Futuramente terá um repositório próprio. Criado com Vite, Preline, Tailwind e Storybooks
 
 #### Estrutura:
 ```
