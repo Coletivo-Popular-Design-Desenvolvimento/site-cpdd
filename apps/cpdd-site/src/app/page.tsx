@@ -1,4 +1,5 @@
 import FAQ from "@src/components/Home/FAQ";
+import Footer from "./ui/Footer";
 
 export default function Home() {
     return (
@@ -6,6 +7,7 @@ export default function Home() {
             <h1 className="text-4xl font-bold">Site do CPDD</h1>
             <FAQ />
             <h2>EXEMPLO MANERÃO</h2>
+            <Footer/>
         </main>
     );
 }

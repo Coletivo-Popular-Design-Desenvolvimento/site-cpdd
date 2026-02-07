@@ -3,6 +3,7 @@ import './globals.css';
 
 import PrelineScriptWrapper from '@components/common/PrelineScriptWrapper';
 import { barlowCondensed } from './fonts';
+import { SvgDefs } from './ui/SvgDefs';
 
 export const metadata: Metadata = {
     title: 'Create Next App',
@@ -17,6 +18,7 @@ export default function RootLayout({
     return (
         <html lang='en'>
             <body className={`${barlowCondensed.className} antialiased`}>
+                <SvgDefs />
                 {children}
                 <PrelineScriptWrapper />
             </body>
