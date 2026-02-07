@@ -1,4 +1,4 @@
-export function SvgDefs () {
+export default function SvgDefs () {
   return (
     <svg className="h-0 w-0 absolute">
       <defs>

@@ -3,7 +3,7 @@ import './globals.css';
 
 import PrelineScriptWrapper from '@components/common/PrelineScriptWrapper';
 import { barlowCondensed } from './fonts';
-import { SvgDefs } from './ui/SvgDefs';
+import SvgDefs from './ui/SvgDefs';
 
 export const metadata: Metadata = {
     title: 'Create Next App',

@@ -35,17 +35,6 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.footer::after {
-  content: "";
-  position: absolute;
-  bottom: -50px;
-  left: 0;
-  width: 120%;
-  height: 100px;
-  background: white;
-  border-radius: 0 0 50% 50%;
-}
-
 @utility clip-wave {
   -webkit-clip-path: url(#clip-wave);
   clip-path: url(#clip-wave);

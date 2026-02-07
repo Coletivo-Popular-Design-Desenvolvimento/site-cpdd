@@ -1,4 +1,4 @@
-import LogoFull from "./LogoFull";
+import CpddLogo from "./CpddLogo";
 
 const emailAddress = "coletivo@cpdd.com.br";
 
@@ -17,7 +17,7 @@ export default function Footer () {
         </p>
       </div>
       <div className="bg-white self-end md:self-start md:py-8 md:pr-40 md:relative md:after:h-full md:after:left-full md:after:top-0 md:after:bg-inherit md:after:absolute md:after:clip-wave">
-        <LogoFull className="w-40 md:w-80" width={320} height={64} />
+        <CpddLogo className="w-40 md:w-80" width={320} height={64} />
       </div>
     </footer>
   );
