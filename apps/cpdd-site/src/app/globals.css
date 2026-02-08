@@ -35,7 +35,7 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-@utility clip-wave {
+@utility clip-wave-right {
   -webkit-clip-path: url(#clip-wave);
   clip-path: url(#clip-wave);
   aspect-ratio: 27 / 14;
