@@ -1,5 +1,5 @@
 import FAQ from "@src/components/Home/FAQ";
-import Footer from "./ui/Footer";
+import Footer from "@src/components/common/Footer";
 
 export default function Home() {
     return (
