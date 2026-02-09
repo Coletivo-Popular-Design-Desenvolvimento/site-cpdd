@@ -2,8 +2,9 @@ import type { Metadata } from 'next';
 import './globals.css';
 
 import PrelineScriptWrapper from '@components/common/PrelineScriptWrapper';
+import SvgDefs from '@components/common/SvgDefs';
+
 import { barlowCondensed } from './fonts';
-import SvgDefs from './ui/SvgDefs';
 
 export const metadata: Metadata = {
     title: 'Create Next App',

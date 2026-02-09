@@ -1,4 +1,4 @@
-import CpddLogo from "@src/components/common/CpddLogo";
+import CpddLogo from "@components/common/CpddLogo";
 
 const emailAddress = "coletivo@cpdd.com.br";
 
