@@ -4,13 +4,20 @@ const emailAddress = "coletivo@cpdd.com.br";
 
 export default function Footer () {
   return (
-    <footer className="layout-grid gap-y-3 py-8 bg-white md:py-0">
-      <div className="bg-white text-black text-sm md:py-16 md:flex md:justify-between md:items-center md:gap-4">
+    <footer className="layout-grid gap-y-3 bg-white text-black py-7 md:gap-y-10 md:py-17 relative">
+      <div
+        className={
+            'full-width hidden absolute h-25 w-full bg-[#F34822] md:block'
+            + ' before:absolute before:h-full before:w-1/2 before:bg-white'
+            + ' after:absolute after:h-full after:left-1/2 after:bg-white after:clip-wave-right'
+        }
+      />
+      <div className="text-sm flex flex-col gap-3 md:flex-row md:justify-between md:items-center md:order-1">
         <div>
-          <p className="font-semibold mb-1 md:text-3xl">Tecnologia nas mãos de quem trabalha</p>
+          <p className="font-semibold mb-3 md:text-3xl">Tecnologia nas mãos de quem trabalha</p>
           <p className="text-xs md:text-xl">Quer colaborar, sugerir ideias ou fazer parte dos nossos projetos?</p>
           <p className="mb-3 text-xs md:text-xl">Mande uma mensagem! Estamos sempre abertos a novas conexões e oportunidades.</p>
-          <p className="mb-3 text-xs md:text-xl">&copy; 2024. CPDD - Coletivo Popular de Design e Desenvolvimento. Todos os direitos reservados.</p>
+          <p className="text-xs md:text-xl">&copy; 2024. CPDD - Coletivo Popular de Design e Desenvolvimento. Todos os direitos reservados.</p>
         </div>
         <div>
           <p className="md:text-2xl">
@@ -20,16 +27,8 @@ export default function Footer () {
           </p>
         </div>
       </div>
-      <div
-        className={
-          'full-width layout-grid'
-          + ' justify-items-end'
-          + ' md:justify-items-normal md:-order-1 md:py-8 md:bg-[#F34822] md:relative'
-          + ' md:before:absolute md:before:h-full md:before:w-1/2 md:before:bg-white'
-          + ' md:after:absolute md:after:h-full md:after:left-1/2 md:after:bg-white md:after:clip-wave-right'
-        }
-      >
-        <CpddLogo className="w-40 md:w-80 z-1" width={320} height={64} />
+      <div className="flex justify-end md:justify-start z-0">
+        <CpddLogo className="w-40 md:w-80" width={320} height={64} />
       </div>
     </footer>
   );

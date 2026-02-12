@@ -42,7 +42,7 @@ body {
 }
 
 .layout-grid {
-  --padding-inline: --spacing(4);
+  --padding-inline: --spacing(6);
   --content-max-width: var(--container-5xl);
   --content-size: min(
       100% - var(--padding-inline) * 2,
