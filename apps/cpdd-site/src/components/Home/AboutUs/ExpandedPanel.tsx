@@ -34,8 +34,8 @@ export function ExpandedPanel({ panel, isActive }: Readonly<ExpandedPanelProps>)
                     {panel.activitiesTitle}
                 </h4>
                 <ul className="list-disc pl-5 text-sm space-y-1">
-                    {panel.activities.map((a) => (
-                        <li key={a}>{a}</li>
+                    {panel.activities.map((a, index) => (
+                        <li key={`${a}-${index}`}>{a}</li>
                     ))}
                 </ul>
             </div>
