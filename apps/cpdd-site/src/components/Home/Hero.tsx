@@ -1,7 +1,7 @@
 export default function Hero() {
     return (
-        <header>
-            <nav>Hero placeholder</nav>
-        </header>
+        <div>
+            <p>Hero placeholder</p>
+        </div>
     );
 }

@@ -1,7 +1,7 @@
 export default function Projects() {
     return (
-        <header>
-            <nav>Projects placeholder</nav>
-        </header>
+        <div>
+            <p>Projects placeholder</p>
+        </div>
     );
 }

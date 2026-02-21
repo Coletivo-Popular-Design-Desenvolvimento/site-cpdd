@@ -1,7 +1,7 @@
 export default function Navbar() {
     return (
         <header>
-            <nav>Header placeholder</nav>
+            <nav>Navbar placeholder</nav>
         </header>
     );
 }
