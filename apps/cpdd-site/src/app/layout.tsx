@@ -31,7 +31,9 @@ export default function RootLayout({
         <html lang='en'>
             <body className={`${barlowCondensed.className} antialiased`}>
                 <SvgDefs />
+                <Navbar />
                 {children}
+                <Footer />
                 <PrelineScriptWrapper />
             </body>
         </html>
