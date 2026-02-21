@@ -1,20 +1,12 @@
 import type { Metadata } from 'next';
-import { Geist, Geist_Mono } from 'next/font/google';
 import './globals.css';
 
 import Navbar from '@src/components/common/Navbar';
 import Footer from '@src/components/common/Footer';
 import PrelineScriptWrapper from '@components/common/PrelineScriptWrapper';
+import SvgDefs from '@components/common/SvgDefs';
 
-const geistSans = Geist({
-    variable: '--font-geist-sans',
-    subsets: ['latin'],
-});
-
-const geistMono = Geist_Mono({
-    variable: '--font-geist-mono',
-    subsets: ['latin'],
-});
+import { barlowCondensed } from './fonts';
 
 export const metadata: Metadata = {
     title: { default: 'CPDD - Coletivo Popular de Design e Desenvolvimento',
@@ -36,12 +28,11 @@ export default function RootLayout({
     children: React.ReactNode;
 }>) {
     return (
-        <html lang='pt-br'>
-            <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+        <html lang='en'>
+            <body className={`${barlowCondensed.className} antialiased`}>
+                <SvgDefs />
                 <Navbar />
-                <main>
-                    {children}
-                </main>
+                {children}
                 <Footer />
                 <PrelineScriptWrapper />
             </body>
