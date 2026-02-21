@@ -4,17 +4,19 @@ import About from '@components/Home/About';
 import Manifest from '@components/Home/Manifest';
 import Fields from '@components/Home/Fields';
 import FAQ from '@components/Home/FAQ';
-import { AboutUs } from "@src/components/Home/AboutUs";
+import { CollectiveAreas } from "@src/components/Home/CollectiveAreas";
+
 
 export default function Home() {
     return (
         <>
             <Hero />
             <Projects />
-            <AboutUs />
+            <About />
             <Manifest />
+            <CollectiveAreas />
             <Fields />
-            <FAQ />            
+            <FAQ />
         </>
     );
 }

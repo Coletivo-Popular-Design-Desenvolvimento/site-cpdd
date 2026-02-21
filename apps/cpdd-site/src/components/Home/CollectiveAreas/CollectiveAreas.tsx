@@ -4,7 +4,7 @@ import { useState } from "react"
 import { panels } from "./data"
 import { AccordionPanel } from "./AccordionPanel"
 
-export function AboutUs() {
+export function CollectiveAreas() {
     const [activeIndex, setActiveIndex] = useState(0)
 
     return (
