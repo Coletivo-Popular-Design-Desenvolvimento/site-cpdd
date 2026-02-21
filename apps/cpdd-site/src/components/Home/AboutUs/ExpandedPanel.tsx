@@ -24,7 +24,7 @@ export function ExpandedPanel({ panel, isActive }: Readonly<ExpandedPanelProps>)
                     minWidth: "280px",
                 }}
             >
-                <h3 className="text-2xl font-bold ">
+                <h3 className="text-2xl font-bold">
                     {panel.title}
                 </h3>
                 <p className="text-sm leading-relaxed line-clamp-5">
