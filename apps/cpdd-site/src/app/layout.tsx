@@ -9,7 +9,8 @@ import SvgDefs from '@components/common/SvgDefs';
 import { barlowCondensed } from './fonts';
 
 export const metadata: Metadata = {
-    title: { default: 'CPDD - Coletivo Popular de Design e Desenvolvimento',
+    title: {
+        default: 'CPDD - Coletivo Popular de Design e Desenvolvimento',
         template: "%s - CPDD",
     },
     description: 'Placeholder para a descrição do site do CPDD', // [] TODO: Adicionar uma descrição mais detalhada do site do CPDD
@@ -32,7 +33,7 @@ export default function RootLayout({
             <body className={`${barlowCondensed.className} antialiased`}>
                 <SvgDefs />
                 <Navbar />
-                {children}
+                <main className='layout-grid'>{children}</main>
                 <Footer />
                 <PrelineScriptWrapper />
             </body>
