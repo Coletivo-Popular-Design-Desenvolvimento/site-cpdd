@@ -9,7 +9,7 @@ interface ExpandedPanelProps {
 export function ExpandedPanel({ panel, isActive }: Readonly<ExpandedPanelProps>) {
     return (
         <div
-            className="absolute inset-0 flex md:flex-row"
+            className="flex-1 overflow-hidden flex md:flex-row"
             style={{
                 opacity: isActive ? 1 : 0,
                 transition: "opacity 400ms ease 150ms",

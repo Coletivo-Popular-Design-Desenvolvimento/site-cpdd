@@ -15,7 +15,7 @@ export function AccordionPanel({ panel, isActive, panelCount, onClick }: Readonl
             onClick={onClick}
             aria-expanded={isActive}
             aria-label={panel.label}
-            className="group relative overflow-hidden rounded-2xl border-0 bg-neutral-900 p-0 text-left outline-none focus-visible:ring-2 focus-visible:ring-white/50"
+            className="group flex flex-row items-stretch overflow-hidden rounded-2xl border-0 bg-neutral-900 p-0 text-left outline-none focus-visible:ring-2 focus-visible:ring-white/50"
             style={{
                 flexGrow: isActive ? panelCount : 0,
                 flexShrink: 0,
@@ -23,7 +23,7 @@ export function AccordionPanel({ panel, isActive, panelCount, onClick }: Readonl
                 transition: "flex-grow 500ms ease",
             }}
         >
-            <CollapsedPanel panel={panel} isActive={isActive} />
+            <CollapsedPanel panel={panel} />
             <ExpandedPanel panel={panel} isActive={isActive} />
         </button>
     )

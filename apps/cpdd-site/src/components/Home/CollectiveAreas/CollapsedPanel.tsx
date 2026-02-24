@@ -2,18 +2,12 @@ import type { Panel } from "./types"
 
 interface CollapsedPanelProps {
     panel: Panel
-    isActive: boolean
 }
 
-export function CollapsedPanel({ panel, isActive }: Readonly<CollapsedPanelProps>) {
+export function CollapsedPanel({ panel }: Readonly<CollapsedPanelProps>) {
     return (
         <div
-            className="absolute inset-0 flex flex-row md:flex-col items-center justify-start md:justify-between gap-4 px-6 md:px-0 md:py-6"
-            style={{
-                opacity: isActive ? 0 : 1,
-                transition: "opacity 300ms ease",
-                pointerEvents: isActive ? "none" : "auto",
-            }}
+            className="flex flex-row md:flex-col items-center justify-start md:justify-between gap-4 px-6 md:px-0 md:py-6 w-auto md:w-[90px] shrink-0"
         >
             <span
                 className="hidden md:block h-15 w-8 rounded-full shrink-0 transition-[height] duration-300 ease-in-out group-hover:h-28"
