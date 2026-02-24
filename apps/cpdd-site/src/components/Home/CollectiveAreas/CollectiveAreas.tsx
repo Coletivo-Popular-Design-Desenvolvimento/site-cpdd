@@ -21,7 +21,6 @@ export function CollectiveAreas() {
                         key={panel.id}
                         panel={panel}
                         isActive={activeIndex === index}
-                        panelCount={panels.length}
                         onClick={() => setActiveIndex(index)}
                     />
                 ))}
