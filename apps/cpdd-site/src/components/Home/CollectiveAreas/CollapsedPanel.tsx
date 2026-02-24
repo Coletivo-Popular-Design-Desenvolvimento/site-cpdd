@@ -6,8 +6,8 @@ interface CollapsedPanelProps {
 
 export function CollapsedPanel({ panel }: Readonly<CollapsedPanelProps>) {
     return (
-        <div
-            className="flex flex-row md:flex-col items-center justify-start md:justify-between gap-4 px-6 md:px-0 md:py-6 w-auto md:w-[90px] shrink-0"
+        <span
+            className="flex flex-row md:flex-col items-center justify-start md:justify-between gap-4 px-6 md:px-0 py-4 md:py-6 w-full md:w-[90px] h-auto md:h-full shrink-0"
         >
             <span
                 className="hidden md:block h-15 w-8 rounded-full shrink-0 transition-[height] duration-300 ease-in-out group-hover:h-28"
@@ -29,6 +29,6 @@ export function CollapsedPanel({ panel }: Readonly<CollapsedPanelProps>) {
             >
                 {panel.label}
             </span>
-        </div>
+        </span>
     )
 }
