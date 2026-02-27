@@ -1,4 +1,6 @@
 @import "tailwindcss";
+@import "./base.css";
+@import "./palette.css"
 
 /* Import UI package styles (Preline configuration) */
 @import "../../../../packages/cpdd-ui/src/styles/globals.css";
