@@ -13,31 +13,31 @@
 
 @layer base {
   .display {
-    @apply text-5xl font-bold;
+    @apply text-5xl font-bold font-heading;
   }
 
   h1 {
-    @apply m-0 text-5xl font-bold;
+    @apply m-0 text-5xl font-bold font-heading;
   }
 
   h2 {
-    @apply m-0 text-4xl font-bold;
+    @apply m-0 text-4xl font-bold font-heading;
   }
 
   h3 {
-    @apply m-0 text-3xl font-semibold;
+    @apply m-0 text-3xl font-semibold font-heading;
   }
 
   h4 {
-    @apply m-0 text-2xl font-semibold;
+    @apply m-0 text-2xl font-semibold font-heading;
   }
 
   h5 {
-    @apply m-0 text-xl font-semibold;
+    @apply m-0 text-xl font-semibold font-heading;
   }
 
   h6 {
-    @apply m-0 text-lg font-semibold;
+    @apply m-0 text-lg font-semibold font-heading;
   }
 
   p {
@@ -49,7 +49,7 @@
   }
 
   body {
-    @apply bg-background text-foreground overflow-x-hidden font-serif;
+    @apply bg-background text-foreground overflow-x-hidden font-body;
   }
 
   main {

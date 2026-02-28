@@ -21,7 +21,9 @@
   --color-background: var(--background);
   --color-foreground: var(--foreground);
 
-  --font-serif: var(--font-slabo-27px);
+  --font-body: var(--font-slabo-27px);
+  --font-heading: var(--font-barlow-condensed);
+  --font-subtitle: var(--font-barlow);
 }
 
 @media (prefers-color-scheme: dark) {
