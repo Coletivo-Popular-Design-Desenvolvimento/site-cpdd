@@ -6,7 +6,7 @@ import Footer from '@src/components/common/Footer';
 import PrelineScriptWrapper from '@components/common/PrelineScriptWrapper';
 import SvgDefs from '@components/common/SvgDefs';
 
-import { barlowCondensed } from './fonts';
+import { barlow, barlowCondensed, slabo27px } from './fonts';
 
 export const metadata: Metadata = {
     title: {
@@ -29,8 +29,8 @@ export default function RootLayout({
     children: React.ReactNode;
 }>) {
     return (
-        <html lang='en'>
-            <body className={`${barlowCondensed.className} antialiased`}>
+        <html lang='en' className={`${slabo27px.variable} ${barlow.variable} ${barlowCondensed.variable}`}>
+            <body className={`antialiased`}>
                 <SvgDefs />
                 <Navbar />
                 <main className='layout-grid'>{children}</main>
