@@ -1,4 +1,58 @@
-/* 
-Adicionar estilos de base a elementos, textos, espaçamentos, etc
-para serem aplicados por padrão em toda a aplicação. 
-*/
+@theme {
+  /* PERFECT FOURTH: next = current * 1.333 */
+  --text-xs: 0.563rem;
+  --text-sm: 0.75rem;
+  --text-base: 1rem;
+  --text-lg: 1.333rem;
+  --text-xl: 1.777rem;
+  --text-2xl: 2.369rem;
+  --text-3xl: 3.157rem;
+  --text-4xl: 4.209rem;
+  --text-5xl: 5.61rem;
+}
+
+@layer base {
+  .display {
+    @apply text-5xl font-bold;
+  }
+
+  h1 {
+    @apply m-0 text-5xl font-bold;
+  }
+
+  h2 {
+    @apply m-0 text-4xl font-bold;
+  }
+
+  h3 {
+    @apply m-0 text-3xl font-semibold;
+  }
+
+  h4 {
+    @apply m-0 text-2xl font-semibold;
+  }
+
+  h5 {
+    @apply m-0 text-xl font-semibold;
+  }
+
+  h6 {
+    @apply m-0 text-lg font-semibold;
+  }
+
+  p {
+    @apply text-base;
+  }
+
+  small {
+    @apply text-sm;
+  }
+
+  body {
+    @apply bg-background text-foreground overflow-x-hidden font-sans;
+  }
+
+  main {
+    @apply min-h-screen overflow-x-hidden;
+  }
+}
