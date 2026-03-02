@@ -1,5 +1,3 @@
-import '../../../../../apps/cpdd-site/src/styles/globals.css';
-
 export default function Typography() {
     return (
         <div className='w-full flex flex-col gap-12'>
