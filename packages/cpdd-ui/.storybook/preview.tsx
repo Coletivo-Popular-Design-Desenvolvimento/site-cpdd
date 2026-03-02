@@ -1,5 +1,6 @@
 import type { Preview } from '@storybook/react';
 import { useEffect } from 'react';
+import '../src/styles/fonts.css';
 import '../src/styles/globals.css';
 
 const preview: Preview = {

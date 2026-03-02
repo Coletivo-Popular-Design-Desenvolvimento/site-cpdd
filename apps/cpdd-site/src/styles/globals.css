@@ -1,9 +1,7 @@
 @import "tailwindcss";
-@import "./base.css";
-@import "./palette.css"
 
 /* Import UI package styles (Preline configuration) */
-@import "../../../../packages/cpdd-ui/src/styles/globals.css";
+@import "@cpdd/ui/styles/globals.css";
 
 /* Scan UI package components for Tailwind classes */
 @source "../../../../packages/cpdd-ui/src/**/*.{ts,tsx}";
@@ -12,6 +10,8 @@
 @plugin "@tailwindcss/forms";
 
 /* Application-specific styles */
+@import "./base.css";
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
@@ -20,10 +20,6 @@
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-
-  --font-body: var(--font-slabo-27px);
-  --font-heading: var(--font-barlow-condensed);
-  --font-subtitle: var(--font-barlow);
 }
 
 @media (prefers-color-scheme: dark) {

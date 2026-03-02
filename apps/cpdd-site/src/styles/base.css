@@ -1,55 +1,6 @@
-@theme {
-  /* PERFECT FOURTH: next = current * 1.333 */
-  --text-xs: 0.563rem;
-  --text-sm: 0.75rem;
-  --text-base: 1rem;
-  --text-lg: 1.333rem;
-  --text-xl: 1.777rem;
-  --text-2xl: 2.369rem;
-  --text-3xl: 3.157rem;
-  --text-4xl: 4.209rem;
-  --text-5xl: 5.61rem;
-}
-
 @layer base {
-  .display {
-    @apply text-5xl font-bold font-heading;
-  }
-
-  h1 {
-    @apply m-0 text-5xl font-bold font-heading;
-  }
-
-  h2 {
-    @apply m-0 text-4xl font-bold font-heading;
-  }
-
-  h3 {
-    @apply m-0 text-3xl font-semibold font-heading;
-  }
-
-  h4 {
-    @apply m-0 text-2xl font-semibold font-heading;
-  }
-
-  h5 {
-    @apply m-0 text-xl font-semibold font-heading;
-  }
-
-  h6 {
-    @apply m-0 text-lg font-semibold font-heading;
-  }
-
-  p {
-    @apply text-base;
-  }
-
-  small {
-    @apply text-sm;
-  }
-
   body {
-    @apply bg-background text-foreground overflow-x-hidden font-body;
+    @apply bg-background text-foreground overflow-x-hidden;
   }
 
   main {

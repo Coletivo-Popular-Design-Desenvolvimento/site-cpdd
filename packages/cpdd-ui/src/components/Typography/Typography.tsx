@@ -3,15 +3,20 @@ import '../../../../../apps/cpdd-site/src/styles/globals.css';
 export default function Typography() {
     return (
         <div className='w-full flex flex-col gap-12'>
-            <p className='text-black display'>Display</p>
-            <h1 className='text-black'>Headline 1</h1>
-            <h2 className='text-black'>Headline 2</h2>
-            <h3 className='text-black'>Headline 3</h3>
-            <h4 className='text-black'>Headline 4</h4>
-            <h5 className='text-black'>Headline 5</h5>
-            <h6 className='text-black'>Headline 6</h6>
-            <p className='text-black'>Paragraphy</p>
-            <p className="text-black small">Small</p>
+            <h1 className="display-lg">Display G</h1>
+            <h1 className="display-md">Display M</h1>
+            <h1 className="heading-lg">Título G</h1>
+            <h1 className="heading-md">Título M</h1>
+            <h1 className="heading-sm">Título P</h1>
+            <h2 className="subheading-lg">Sub-título G</h2>
+            <h2 className="subheading-md">Sub-título M</h2>
+            <h2 className="subheading-sm">Sub-título P</h2>
+            <button className="button-lg">Botão G</button>
+            <button className="button-md">Botão M</button>
+            <button className="button-sm">Botão P</button>
+            <p className="body-lg">Corpo G</p>
+            <p className="body-md">Corpo M</p>
+            <p className="body-sm">Corpo P</p>
         </div>
     );
 }

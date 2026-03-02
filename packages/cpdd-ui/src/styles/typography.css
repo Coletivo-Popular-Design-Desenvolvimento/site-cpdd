@@ -1,0 +1,81 @@
+@theme inline {
+  --text-50: 9pt;
+  --text-50--line-height: 12pt;
+  --text-100: 12pt;
+  --text-100--line-height: 16pt;
+  --text-200: 16pt;
+  --text-200--line-height: 22pt;
+  --text-300: 22pt;
+  --text-300--line-height: 28pt;
+  --text-400: 28pt;
+  --text-400--line-height: 32pt;
+  --text-500: 38pt;
+  --text-500--line-height: 44pt;
+  --text-600: 50pt;
+  --text-600--line-height: 56pt;
+  --text-700: 68pt;
+  --text-700--line-height: 76pt;
+  --text-800: 90pt;
+  --text-800--line-height: 96pt;
+
+  --font-body: var(--font-slabo-27px);
+  --font-heading: var(--font-barlow-condensed);
+  --font-subheading: var(--font-barlow);
+  --font-button: var(--font-barlow-condensed);
+}
+
+@utility display-lg {
+  @apply uppercase text-800 font-bold font-heading;
+}
+
+@utility display-md {
+  @apply uppercase text-700 font-bold font-heading;
+}
+
+@utility heading-lg {
+  @apply uppercase text-600 font-bold font-heading;
+}
+
+@utility heading-md {
+  @apply uppercase text-500 font-bold font-heading;
+}
+
+@utility heading-sm {
+  @apply uppercase text-400 font-semibold font-heading;
+}
+
+@utility subheading-lg {
+  @apply text-500 font-semibold font-subheading;
+}
+
+@utility subheading-md {
+  @apply text-400 font-medium font-subheading;
+}
+
+@utility subheading-sm {
+  @apply text-300 font-normal font-subheading;
+}
+
+@utility button-lg {
+  @apply uppercase text-300 font-bold font-button;
+}
+
+@utility button-md {
+  @apply uppercase text-200 font-semibold font-button;
+}
+
+@utility button-sm {
+  @apply uppercase text-100 font-semibold font-button;
+}
+
+@utility body-lg {
+  @apply text-300 font-body;
+}
+
+@utility body-md {
+  @apply text-200 font-body;
+}
+
+@utility body-sm {
+  @apply text-100 font-body;
+}
