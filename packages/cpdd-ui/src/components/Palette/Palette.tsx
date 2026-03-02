@@ -1,5 +1,3 @@
-import '../../../../../apps/cpdd-site/src/styles/globals.css';
-
 export default function Palette() {
     return (
         <div className='w-full grid grid-rows-10 gap-4'>
