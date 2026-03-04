@@ -27,8 +27,6 @@ export function ExpandedPanel({ panel, isActive, isMobileActive }: Readonly<Expa
                 }}
             >
                 <div className={`flex flex-col gap-4 md:transition-opacity ${contentFadeClass}`}>
-                    <h2 className="text-4xl font-bold uppercase relative md:hidden">{panel.label}</h2>
-
                     <h3 className="text-2xl font-bold">
                         {panel.title}
                     </h3>
