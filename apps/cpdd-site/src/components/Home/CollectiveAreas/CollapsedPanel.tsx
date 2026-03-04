@@ -11,13 +11,13 @@ export function CollapsedPanel({ panel }: Readonly<CollapsedPanelProps>) {
         >
             <span
                 className="hidden md:block h-15 w-8 rounded-full shrink-0 transition-[height] duration-300 ease-in-out group-hover:h-28"
-                style={{ backgroundColor: panel.dotColor }}
+                style={{ backgroundColor: panel.panelColor }}
             />
 
-            {/* Mobile: horizontal text with dotColor */}
+            {/* Mobile: horizontal text with panelColor */}
             <span
                 className="md:hidden text-2xl font-semibold tracking-wider uppercase"
-                style={{ color: panel.dotColor }}
+                style={{ color: panel.panelColor }}
             >
                 {panel.label}
             </span>
