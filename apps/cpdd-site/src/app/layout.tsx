@@ -1,15 +1,16 @@
 import type { Metadata } from 'next';
-import './globals.css';
+import '../styles/globals.css';
 
 import Navbar from '@src/components/common/Navbar';
 import Footer from '@src/components/common/Footer';
 import PrelineScriptWrapper from '@components/common/PrelineScriptWrapper';
 import SvgDefs from '@components/common/SvgDefs';
 
-import { barlowCondensed } from './fonts';
+import { barlow, barlowCondensed, slabo27px } from './fonts';
 
 export const metadata: Metadata = {
-    title: { default: 'CPDD - Coletivo Popular de Design e Desenvolvimento',
+    title: {
+        default: 'CPDD - Coletivo Popular de Design e Desenvolvimento',
         template: "%s - CPDD",
     },
     description: 'Placeholder para a descrição do site do CPDD', // [] TODO: Adicionar uma descrição mais detalhada do site do CPDD
@@ -28,11 +29,11 @@ export default function RootLayout({
     children: React.ReactNode;
 }>) {
     return (
-        <html lang='en'>
-            <body className={`${barlowCondensed.className} antialiased`}>
+        <html lang='en' className={`${slabo27px.variable} ${barlow.variable} ${barlowCondensed.variable}`}>
+            <body className={`antialiased`}>
                 <SvgDefs />
                 <Navbar />
-                {children}
+                <main className='layout-grid'>{children}</main>
                 <Footer />
                 <PrelineScriptWrapper />
             </body>

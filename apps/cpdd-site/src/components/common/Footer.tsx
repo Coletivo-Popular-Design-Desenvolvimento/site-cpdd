@@ -1,4 +1,4 @@
-import CpddLogo from "@components/common/CpddLogo";
+import CpddLogoTexto from "@src/components/common/CpddLogoTexto";
 
 const emailAddress = "coletivo@cpdd.com.br";
 
@@ -28,7 +28,7 @@ export default function Footer () {
         </div>
       </div>
       <div className="flex justify-end md:justify-start z-0">
-        <CpddLogo className="w-40 md:w-80" width={320} height={64} />
+        <CpddLogoTexto className="fill-current w-40 md:w-80" />
       </div>
     </footer>
   );
