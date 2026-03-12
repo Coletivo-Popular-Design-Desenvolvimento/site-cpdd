@@ -2,8 +2,9 @@ import Hero from '@components/Home/Hero';
 import Projects from '@components/Home/Projects';
 import About from '@components/Home/About';
 import Manifest from '@components/Home/Manifest';
-import Fields from '@components/Home/Fields';
+import { CollectiveAreas } from "@components/Home/CollectiveAreas";
 import FAQ from '@components/Home/FAQ';
+
 
 export default function Home() {
     return (
@@ -12,8 +13,8 @@ export default function Home() {
             <Projects />
             <About />
             <Manifest />
-            <Fields />
-            <FAQ />            
+            <CollectiveAreas />
+            <FAQ />
         </>
     );
 }

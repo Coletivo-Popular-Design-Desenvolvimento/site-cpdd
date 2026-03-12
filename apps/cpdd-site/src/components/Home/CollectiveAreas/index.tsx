@@ -1,0 +1,1 @@
+export { CollectiveAreas } from "./CollectiveAreas"
