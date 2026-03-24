@@ -37,7 +37,7 @@
 
 .layout-grid {
   --padding-inline: --spacing(6);
-  --content-max-width: var(--container-5xl);
+  --content-max-width: 1348px;
   --content-size: min(
       100% - var(--padding-inline) * 2,
       var(--content-max-width)
