@@ -20,6 +20,8 @@
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+
+  --container-cpdd-content: 1348px;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -37,7 +39,7 @@
 
 .layout-grid {
   --padding-inline: --spacing(6);
-  --content-max-width: 1348px;
+  --content-max-width: var(--container-cpdd-content);
   --content-size: min(
       100% - var(--padding-inline) * 2,
       var(--content-max-width)
