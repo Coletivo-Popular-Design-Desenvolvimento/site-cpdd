@@ -35,6 +35,8 @@
   -webkit-clip-path: url(#clip-wave);
   clip-path: url(#clip-wave);
   aspect-ratio: 27 / 14;
+  /* https://stackoverflow.com/questions/51542919/clip-path-on-chrome-leaves-a-strange-line-on-the-edge/74287618 */
+  transform: skewY(0.001deg);
 }
 
 @utility container {

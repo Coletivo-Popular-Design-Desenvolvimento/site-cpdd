@@ -4,24 +4,21 @@ const emailAddress = "coletivo@cpdd.com.br";
 
 export default function Footer () {
   return (
-    <footer className="bg-white text-black py-7 md:py-17 relative">
-      <div
-        className={
-            'top-0 hidden absolute h-25 w-full bg-[#F34822] md:block'
-            + ' before:absolute before:h-full before:w-1/2 before:bg-white'
-            + ' after:absolute after:h-full after:left-1/2 after:bg-white after:clip-wave-right'
-        }
-      />
+    <footer className="bg-cpdd-neutral-50 text-cpdd-neutral-950 py-7 md:py-17 relative font-footer">
+      <div className="top-0 absolute h-25 w-full bg-cpdd-orange-500 hidden md:block">
+        <div className="inline-block h-full w-2/5 bg-cpdd-neutral-50"/>
+        <div className="inline-block h-full clip-wave-right bg-cpdd-neutral-50"/>
+      </div>
       <div className="container flex flex-col gap-y-3 md:gap-y-10">
-        <div className="text-sm flex flex-col gap-3 md:flex-row md:justify-between md:items-center md:order-1">
+        <div className="flex flex-col gap-3 md:flex-row md:justify-between md:items-center md:order-1">
           <div>
-            <p className="font-semibold mb-3 md:text-3xl">Tecnologia nas mãos de quem trabalha</p>
+            <p className="mb-3 font-semibold text-sm md:text-3xl">Tecnologia nas mãos de quem trabalha</p>
             <p className="text-xs md:text-xl">Quer colaborar, sugerir ideias ou fazer parte dos nossos projetos?</p>
             <p className="mb-3 text-xs md:text-xl">Mande uma mensagem! Estamos sempre abertos a novas conexões e oportunidades.</p>
             <p className="text-xs md:text-xl">&copy; 2024. CPDD - Coletivo Popular de Design e Desenvolvimento. Todos os direitos reservados.</p>
           </div>
           <div>
-            <p className="md:text-2xl">
+            <p className="text-sm md:text-2xl">
               <span className="font-semibold">E-mail para contato e parcerias:</span>
               <br />
               <a href={`mailto:${emailAddress}`}>{emailAddress}</a>
