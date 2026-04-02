@@ -23,6 +23,7 @@
   --font-subheading: var(--font-barlow);
   --font-button: var(--font-barlow-condensed);
   --font-body-alt: var(--font-barlow);
+  --font-footer: var(--font-barlow-condensed);
 }
 
 @utility display-lg {
