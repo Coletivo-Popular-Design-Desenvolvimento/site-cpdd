@@ -1,8 +1,10 @@
 'use client';
 
+import { useState } from "react";
 import Link from "next/link"
 import { usePathname } from "next/navigation";
 import CpddLogoTexto from "./CpddLogoTexto";
+import HamburgerIcon from "./HamburgerIcon";
 
 const menu = [
     { href: '/projetos', label: 'Projetos' },
@@ -10,34 +12,62 @@ const menu = [
     { href: '/sobre-nos', label: 'Sobre nós' },
 ];
 
-const landingPageActiveClassName = [
-    "text-cpdd-orange-500 relative",
-    "before:w-screen before:h-full before:absolute before:right-0 before:top-0 before:bg-cpdd-neutral-950",
-    "after:h-full after:clip-rounded-wedge after:absolute after:left-full after:top-0 after:bg-cpdd-neutral-950",
-].join(' ');
-
-const menuButtonActiveClassName = "rounded-b-4xl bg-cpdd-neutral-950 text-cpdd-orange-500";
-
 export default function Navbar() {
+    const [isMenuOpen, setIsMenuOpen] = useState(false);
     const pathname = usePathname();
 
     return (
-        <header className="bg-cpdd-orange-500 text-cpdd-neutral-950 relative before:w-full before:h-4 before:absolute before:top-0 before:bg-cpdd-neutral-950">
-            <div className="container flex justify-between gap-32">
-                <div className={pathname === "/" ? landingPageActiveClassName : undefined}>
+        <header
+            className={
+                "relative lg:bg-cpdd-orange-500 lg:text-cpdd-neutral-950"
+                + " before:w-full before:h-1 before:absolute before:top-0 before:bg-cpdd-neutral-950 before:z-1 lg:before:h-4"
+                + (isMenuOpen ? " bg-cpdd-neutral-950 text-cpdd-orange-500" : " bg-cpdd-orange-500 text-cpdd-neutral-950")
+            }
+        >
+            <div className="container flex justify-between gap-16 lg:gap-32">
+                <div
+                    className={
+                        "relative"
+                        + " before:w-screen before:h-full before:absolute before:right-full before:top-0 before:bg-inherit"
+                        + " after:h-full after:clip-rounded-wedge after:absolute after:left-full after:top-0 after:bg-inherit"
+                        + (isMenuOpen ? " bg-cpdd-orange-500 text-cpdd-neutral-950" : " bg-cpdd-neutral-950 text-cpdd-orange-500")
+                        + (pathname === "/" ? " lg:bg-cpdd-neutral-950 lg:text-cpdd-orange-500" : " lg:bg-cpdd-orange-500 lg:text-cpdd-neutral-950")
+                    }
+                >
                     <Link
-                        className="block py-6 isolate"
+                        className="block py-3 lg:py-6 isolate"
                         href="/"
                     >
-                        <CpddLogoTexto className="fill-current w-80"/>
+                        <CpddLogoTexto className="fill-current w-40 lg:w-80"/>
                     </Link>
                 </div>
-                <nav>
-                    <ul className="h-full flex gap-6">
+                <button
+                    hidden={true} // escondido enquanto não houver outras paginas
+                    aria-label="Menu"
+                    aria-expanded={isMenuOpen}
+                    aria-controls="navbar-menu"
+                    className="px-4 lg:hidden"
+                    onClick={() => setIsMenuOpen(prev => !prev)}
+                    type="button"
+                >
+                    <HamburgerIcon className="fill-current"/>
+                </button>
+                <nav
+                    hidden={true} // escondido enquanto não houver outras paginas
+                    id="navbar-menu"
+                    className={
+                        "absolute top-full inset-x-0 lg:static lg:block lg:bg-cpdd-orange-500 lg:text-cpdd-neutral-950"
+                        + (isMenuOpen ? " block bg-cpdd-neutral-950 text-cpdd-orange-500" : " hidden")
+                    }
+                >
+                    <ul className="h-11 grid grid-cols-3 lg:gap-6 lg:h-full">
                         {menu.map(({ href, label }) => (
                             <li key={href}>
                                 <Link
-                                    className={`button-lg flex items-center h-full px-15 ${pathname === href ? menuButtonActiveClassName : ""}`}
+                                    className={
+                                        "max-lg:text-sm button-lg flex items-center justify-center h-full lg:px-15"
+                                        + (pathname === href ? " bg-cpdd-neutral-950 text-cpdd-orange-500 lg:rounded-b-4xl" : "")
+                                    }
                                     href={href}
                                 >
                                     {label}
