@@ -65,7 +65,7 @@ export default function Navbar() {
                             <li key={href}>
                                 <Link
                                     className={
-                                        "max-lg:text-sm button-lg flex items-center justify-center h-full lg:px-15"
+                                        "max-lg:text-sm button-lg font-semibold flex items-center justify-center h-full lg:px-15"
                                         + (pathname === href ? " bg-cpdd-neutral-950 text-cpdd-orange-500 lg:rounded-b-4xl" : "")
                                     }
                                     href={href}
