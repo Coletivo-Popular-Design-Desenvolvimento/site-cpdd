@@ -1,8 +1,8 @@
 export default function Hero() {
     return (
         <div className="full-width layout-grid h-200 flex items-center bg-cpdd-orange-500 text-black">
-            <div className="max-w-108 flex flex-col gap-11">
-                <h1 className="display-lg">Lorem Ipsum</h1>
+            <div className="sm:max-w-108 flex flex-col gap-11">
+                <h1 className="display-md text-end sm:text-start sm:display-lg">Venha fazer parte da revolução brasileira</h1>
                 <p className="body-lg">
                     Lorem ipsum dolor sit amet consectetur. Amet blandit leo imperdiet tristique
                     scelerisque turpis enim lorem id. Dui dui eu accumsan sit iaculis pretium morbi.
