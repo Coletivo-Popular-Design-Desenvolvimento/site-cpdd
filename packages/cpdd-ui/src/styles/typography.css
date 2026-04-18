@@ -59,15 +59,15 @@
 }
 
 @utility button-lg {
-  @apply uppercase text-300 font-bold font-button;
+  @apply uppercase text-300 text-center font-bold font-button;
 }
 
 @utility button-md {
-  @apply uppercase text-200 font-semibold font-button;
+  @apply uppercase text-200 text-center font-semibold font-button;
 }
 
 @utility button-sm {
-  @apply uppercase text-100 font-semibold font-button;
+  @apply uppercase text-100 text-center font-semibold font-button;
 }
 
 @utility body-lg {
@@ -80,4 +80,12 @@
 
 @utility body-sm {
   @apply text-100 font-body;
+}
+
+@utility body-alt-lg {
+  @apply text-300 font-body-alt;
+}
+
+@utility body-alt-md {
+  @apply text-200 font-body-alt;
 }
