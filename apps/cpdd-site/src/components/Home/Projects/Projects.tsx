@@ -1,41 +1,27 @@
 import Image from "next/image";
 import Link from "next/link";
-
-const projects = [
-    {
-        id: 1,
-        title: 'Nome do projeto',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel sapien eget nunc efficitur varius.',
-        image: 'https://picsum.photos/seed/project1/800/600',
-        publishedAt: '01/04/2026',
-        link: '#'
-    },
-    {
-        id: 2,
-        title: 'Nome do projeto 2',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel sapien eget nunc efficitur varius.',
-        image: 'https://picsum.photos/seed/project2/800/600',
-        publishedAt: '01/04/2026',
-        link: '#'
-    },
-    {
-        id: 3,
-        title: 'Nome do projeto 3',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel sapien eget nunc efficitur varius.',
-        image: 'https://picsum.photos/seed/project3/800/600',
-        publishedAt: '01/04/2026',
-        link: '#'
-    },
-];
+import WaveDivider from "@components/common/WaveDivider";
+import { projects } from "./data";
 
 export default function Projects() {
     return (
         <section className="bg-cpdd-neutral-950 text-cpdd-neutral-50">
-            <div className="container">
-                <h2 className="mb-4 lg:mb-9 heading-sm lg:display-md text-cpdd-orange-500">Projetos em destaque</h2>
+            <div className="relative bg-cpdd-orange-500">
+                <WaveDivider
+                    backgroundClassName="bg-cpdd-neutral-950"
+                    className="absolute inset-0"
+                    widthClassName="min-w-65 w-3/5"
+                    xPosition="left"
+                    yPosition="bottom"
+                />
+                <div className="isolate container min-h-12 lg:min-h-25 flex items-center">
+                    <h2 className="heading-sm lg:display-md text-cpdd-orange-500">
+                        Projetos em destaque
+                    </h2>
+                </div>
             </div>
             <div className="md:container">
-                <ul className="px-6 md:px-0 mb-7 flex gap-6 overflow-auto">
+                <ul className="px-6 md:px-0 my-3 lg:my-5 flex gap-6 overflow-auto">
                     {projects.map((project) => (
                         <li tabIndex={0} className="flex-1 min-w-54 h-75 md:h-112 lg:h-150 relative rounded-lg lg:rounded-4xl overflow-clip group" key={project.id}>
                             <Image src={project.image} alt="" fill className="object-cover"/>
@@ -57,13 +43,22 @@ export default function Projects() {
                     ))}
                 </ul>
             </div>
-            <div className="container">
-                <Link
-                    className="block ml-auto text-cpdd-orange-500 border-current rounded-full w-2/5 py-1 border-2 lg:border-4 button-md lg:button-lg"
-                    href="/projects"
-                >
-                    Ver todos
-                </Link>
+            <div className="relative bg-cpdd-orange-500">
+                <WaveDivider
+                    backgroundClassName="bg-cpdd-neutral-950"
+                    className="absolute inset-0"
+                    widthClassName="w-1/2"
+                    yPosition="top"
+                    xPosition="right"
+                />
+                <div className="isolate container min-h-12 lg:min-h-25 flex items-center">
+                    <Link
+                        className="block ml-auto text-cpdd-orange-500 border-current rounded-full w-2/5 py-1 lg:py-3 border-2 lg:border-4 button-md lg:button-lg"
+                        href="/projects"
+                    >
+                        Ver todos
+                    </Link>
+                </div>
             </div>
         </section>
     );
