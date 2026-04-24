@@ -39,6 +39,14 @@
   transform: skewY(0.001deg);
 }
 
+@utility clip-rounded-wedge {
+  -webkit-clip-path: url(#clip-rounded-wedge);
+  clip-path: url(#clip-rounded-wedge);
+  aspect-ratio: 197 / 175;
+  /* https://stackoverflow.com/questions/51542919/clip-path-on-chrome-leaves-a-strange-line-on-the-edge/74287618 */
+  transform: skewY(0.001deg);
+}
+
 @utility container {
   margin-inline: auto;
   padding-inline: --spacing(6);
