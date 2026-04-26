@@ -6,7 +6,7 @@ export default function Hero() {
                     <h1 className="max-w-3xl heading-lg text-end sm:text-start sm:display-lg">
                         Tecnologia nas mãos de quem trabalha.
                     </h1>
-                    <h2 className="max-w-md text-end sm:text-start subheading-sm">
+                    <h2 className="max-w-md text-end sm:text-start body-lg">
                         O CPDD organiza designers, desenvolvedores e profissionais de gestão que
                         acreditam que tecnologia deve servir à classe trabalhadora, não ao mercado.
                         Se você compartilha dessa visão, esse é o seu lugar.
