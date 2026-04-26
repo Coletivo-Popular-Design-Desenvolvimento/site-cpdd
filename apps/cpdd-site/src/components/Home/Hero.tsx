@@ -11,7 +11,7 @@ export default function Hero() {
                         acreditam que tecnologia deve servir à classe trabalhadora, não ao mercado.
                         Se você compartilha dessa visão, esse é o seu lugar.
                     </h2>
-                    <div className="w-full sm:max-w-108 flex flex-col items-start gap-4">
+                    <div className="mt-4 w-full sm:max-w-108 flex flex-col items-start gap-4">
                         <a
                             href="#"
                             target="_blank"
