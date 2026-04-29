@@ -37,6 +37,7 @@ export default function Projects() {
                                     <p className="body-alt-md lg:body-alt-lg mb-2 md:mb-6 lg:mb-12">{project.description}</p>
                                     <p className="body-alt-md lg:body-alt-lg mb-2 md:mb-6 lg:mb-12">Publicado em {project.publishedAt}.</p>
                                     <Link
+                                        hidden
                                         className="button-md md:button-lg block border-2 md:border-4 border-cpdd-neutral-950 rounded-lg py-1 md:py-3 mt-auto"
                                         href={project.link}
                                     >
@@ -58,6 +59,7 @@ export default function Projects() {
                 />
                 <div className="isolate container min-h-12 md:min-h-25 flex items-center">
                     <Link
+                        hidden
                         className="block ml-auto text-cpdd-orange-500 border-current rounded-full w-2/5 py-1 md:py-3 border-2 md:border-4 button-md md:button-lg"
                         href="/projects"
                     >
