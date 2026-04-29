@@ -13,6 +13,7 @@ export default function Manifest() {
                         {paragraphs.map((text, i) => <p key={i}>{text}</p>)}
                     </div>
                     <Link
+                        hidden
                         href="#"
                         className="block mx-auto max-w-2/3 mt-8 text-center rounded-lg button-sm text-sm py-3 border-2 border-cpdd-neutral-950 md:border-4 md:button-lg md:mt-11 md:max-w-2/5 md:mr-0"
                     >
