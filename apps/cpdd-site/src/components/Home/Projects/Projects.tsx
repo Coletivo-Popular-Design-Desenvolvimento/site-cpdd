@@ -25,19 +25,24 @@ export default function Projects() {
                     {projects.map((project) => (
                         <li tabIndex={0} className="flex-1 min-w-54 h-75 md:h-112 lg:h-150 relative rounded-lg lg:rounded-4xl overflow-clip group" key={project.id}>
                             <Image src={project.image} alt="" fill className="object-cover"/>
-                            <div className="isolate h-full flex items-end px-4 lg:px-9 py-6 lg:py-12 bg-linear-to-t from-black/80 to-transparent to-75% group-hover:hidden group-focus-within:hidden">
+                            <div
+                                className="isolate h-full flex items-end px-4 lg:px-9 py-6 lg:py-12 bg-linear-to-t from-black/80 to-transparent to-75% group-hover:hidden group-focus-within:hidden"
+                                aria-hidden={true} // oculta para leitores de tela
+                            >
                                 <h3 className="heading-sm md:heading-md lg:heading-lg text-balance">{project.title}</h3>
                             </div>
-                            <div className="isolate absolute inset-0 bg-cpdd-orange-500/94 text-cpdd-neutral-950 p-4 lg:p-9 lg:pt-16 hidden flex-col group-hover:flex group-focus-within:flex">
-                                <h3 className="heading-sm md:heading-md lg:heading-lg mb-2 md:mb-6 lg:mb-12 text-balance">{project.title}</h3>
-                                <p className="body-alt-md lg:body-alt-lg mb-2 md:mb-6 lg:mb-12">{project.description}</p>
-                                <p className="body-alt-md lg:body-alt-lg mb-2 md:mb-6 lg:mb-12">Publicado em {project.publishedAt}.</p>
-                                <Link
-                                    className="button-md md:button-lg block border-2 md:border-4 border-cpdd-neutral-950 rounded-lg py-1 md:py-3 mt-auto"
-                                    href={project.link}
-                                >
-                                    Saiba mais
-                                </Link>
+                            <div className="sr-only group-hover:not-sr-only group-focus-within:not-sr-only">
+                                <div className="isolate absolute inset-0 bg-cpdd-orange-500/94 text-cpdd-neutral-950 p-4 lg:p-9 lg:pt-16 flex flex-col">
+                                    <h3 className="heading-sm md:heading-md lg:heading-lg mb-2 md:mb-6 lg:mb-12 text-balance">{project.title}</h3>
+                                    <p className="body-alt-md lg:body-alt-lg mb-2 md:mb-6 lg:mb-12">{project.description}</p>
+                                    <p className="body-alt-md lg:body-alt-lg mb-2 md:mb-6 lg:mb-12">Publicado em {project.publishedAt}.</p>
+                                    <Link
+                                        className="button-md md:button-lg block border-2 md:border-4 border-cpdd-neutral-950 rounded-lg py-1 md:py-3 mt-auto"
+                                        href={project.link}
+                                    >
+                                        Saiba mais
+                                    </Link>
+                                </div>
                             </div>
                         </li>
                     ))}
