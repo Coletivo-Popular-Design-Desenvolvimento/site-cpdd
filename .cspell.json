@@ -7,7 +7,21 @@
     "**/build/**",
     "pnpm-lock.yaml"
   ],
-  "dictionaries": ["dicionario"],
+  "dictionaries": [
+    "dicionario",
+
+    "css",
+    "docker",
+    "fonts",
+    "html",
+    "javascript",
+    "json",
+    "lorem",
+    "portuguese",
+    "pt-br",
+    "tsx",
+    "typescript"
+  ],
   "caseSensitive": false,
   "dictionaryDefinitions": [
     {
