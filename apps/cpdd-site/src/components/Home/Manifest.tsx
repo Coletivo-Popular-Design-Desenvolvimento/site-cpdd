@@ -1,7 +1,9 @@
-import Link from "next/link";
+import Link from 'next/link';
 
-const paragraphs = 'Lorem ipsum dolor sit amet consectetur. Sed scelerisque dapibus pellentesque luctus nec faucibus sed. Nunc mauris mi et tincidunt est. Mauris sed tellus vestibulum pellentesque massa aliquam libero augue purus. Mi placerat volutpat fermentum in feugiat eget. Sodales senectus vitae rhoncus vitae dui aliquet phasellus sit. Quisque feugiat urna mollis ipsum convallis viverra. Lorem ipsum dolor sit amet consectetur. Sed scelerisque dapibus pellentesque luctus nec faucibus sed. Nunc mauris mi et tincidunt est. \nMauris sed tellus vestibulum pellentesque massa aliquam libero augue purus. Mi placerat volutpat fermentum in feugiat eget. Sodales senectus vitae rhoncus vitae dui aliquet phasellus sit. Quisque feugiat urna mollis ipsum convallis viverra.Lorem ipsum dolor sit amet consectetur. Sed scelerisque dapibus pellentesque luctus nec faucibus sed. Nunc mauris mi et tincidunt est.'
-    .split('\n');
+const paragraphs =
+    'A tecnologia nunca é neutra. Todo site, app ou código carrega interesses. No capitalismo, servem ao lucro. Nós escolhemos outro caminho: que a ciência e a técnica sirvam ao povo.\nO CPDD surge como resposta organizada a essa hegemonia neoliberal. Entendemos que só é possível disputar esse campo criando um espaço de formação política baseado na teoria marxista-leninista. Nosso objetivo é construir uma comunidade de esquerda radical capaz de enfrentar o domínio ideológico das Big Techs e fortalecer a luta de classes dentro do mercado. Avançando para o socialismo brasileiro.'.split(
+        '\n'
+    );
 
 export default function Manifest() {
     return (
@@ -10,7 +12,9 @@ export default function Manifest() {
                 <div className="md:px-27">
                     <h2 className="heading-sm mb-8 md:display-md md:mb-11">Manifesto</h2>
                     <div className="space-y-4 body-sm text-sm md:body-lg">
-                        {paragraphs.map((text, i) => <p key={i}>{text}</p>)}
+                        {paragraphs.map((text, i) => (
+                            <p key={i}>{text}</p>
+                        ))}
                     </div>
                     <Link
                         hidden
