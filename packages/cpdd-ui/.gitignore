@@ -1,6 +1,7 @@
 # Compiled output
 dist/
 *.tsbuildinfo
+storybook-static/
 
 # Dependencies
 node_modules/
