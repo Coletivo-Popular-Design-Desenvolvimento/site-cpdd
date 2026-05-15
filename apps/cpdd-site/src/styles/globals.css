@@ -1,0 +1,60 @@
+@import "tailwindcss";
+
+/* Import UI package styles (Preline configuration) */
+@import "@cpdd/ui/styles/globals.css";
+
+/* Scan UI package components for Tailwind classes */
+@source "../../../../packages/cpdd-ui/src/**/*.{ts,tsx}";
+
+/* Plugins */
+@plugin "@tailwindcss/forms";
+
+/* Application-specific styles */
+@import "./base.css";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+
+  --container-cpdd-content: 1348px;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+@utility clip-wave-right {
+  -webkit-clip-path: url(#clip-wave);
+  clip-path: url(#clip-wave);
+  aspect-ratio: 27 / 14;
+  /* https://stackoverflow.com/questions/51542919/clip-path-on-chrome-leaves-a-strange-line-on-the-edge/74287618 */
+  transform: skewY(0.001deg);
+}
+
+@utility clip-rounded-wedge {
+  -webkit-clip-path: url(#clip-rounded-wedge);
+  clip-path: url(#clip-rounded-wedge);
+  aspect-ratio: 197 / 175;
+  /* https://stackoverflow.com/questions/51542919/clip-path-on-chrome-leaves-a-strange-line-on-the-edge/74287618 */
+  transform: skewY(0.001deg);
+}
+
+@utility clip-about-image {
+  -webkit-clip-path: url(#clip-about-image);
+  clip-path: url(#clip-about-image);
+}
+
+@utility container {
+  margin-inline: auto;
+  padding-inline: --spacing(6);
+  max-width: var(--container-cpdd-content);
+  width: 100%;
+}

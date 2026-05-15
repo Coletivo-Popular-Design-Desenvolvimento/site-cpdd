@@ -1,0 +1,68 @@
+@theme {
+
+    /* NEUTRAL */
+    --color-cpdd-neutral-50: #fafafa;
+    --color-cpdd-neutral-200: #e3e3e3;
+    --color-cpdd-neutral-400: #b3b3b3;
+    --color-cpdd-neutral-500: #808080;
+    --color-cpdd-neutral-700: #4d4d4d;
+    --color-cpdd-neutral-950: #0c0c0c;
+
+
+    /* GREEN */
+    --color-cpdd-green-50: #e8f5e9;
+    --color-cpdd-green-500: #2e7d32;
+    --color-cpdd-green-800: #1b5e20;
+
+
+    /* CYAN */
+    --color-cpdd-cyan-100: #e3fcfc;
+    --color-cpdd-cyan-300: #7df0f2;
+    --color-cpdd-cyan-500: #00b9bd;
+    --color-cpdd-cyan-800: #009599;
+
+
+    /* BLUE */
+    --color-cpdd-blue-100: #e3f2fd;
+    --color-cpdd-blue-500: #1976d2;
+    --color-cpdd-blue-900: #0d47a1;
+
+
+    /* PURPLE */
+    --color-cpdd-purple-100: #eee9f6;
+    --color-cpdd-purple-400: #a57ff0;
+    --color-cpdd-purple-800: #4d17b7;
+    --color-cpdd-purple-950: #39108c;
+
+
+    /* RED */
+    --color-cpdd-red-100: #ffebee;
+    --color-cpdd-red-500: #c62828;
+    --color-cpdd-red-800: #8b0000;
+
+
+    /* ORANGE */
+    --color-cpdd-orange-100: #ffe6e0;
+    --color-cpdd-orange-300: #ff8a70;
+    --color-cpdd-orange-500: #f34822;
+    --color-cpdd-orange-700: #cc3919;
+
+
+    /* YELLOW */
+    --color-cpdd-yellow-50: #fff8e1;
+    --color-cpdd-yellow-500: #f9a825;
+    --color-cpdd-yellow-700: #c17900;
+
+
+    /* GRADIENTES DE COR ÚNICA */
+    --background-image-cpdd-gradient-orange: linear-gradient(90deg, rgba(255, 138, 112, 1) 0%, rgba(243, 72, 34, 1) 50%, rgba(204, 57, 25, 1) 100%);
+    --background-image-cpdd-gradient-cyan: linear-gradient(90deg, rgba(125, 240, 242, 1) 0%, rgba(0, 185, 189, 1) 50%, rgba(0, 149, 153, 1) 100%) ;
+    --background-image-cpdd-gradient-purple: linear-gradient(90deg, rgba(165, 127, 240, 1) 0%, rgba(77, 23, 183, 1) 50%, rgba(57, 16, 140, 1) 100%);
+    --background-image-cpdd-gradient-yellow: linear-gradient(90deg,rgba(255, 248, 225, 1) 0%, rgba(249, 168, 37, 1) 50%, rgba(193, 121, 0, 1) 100%);
+
+
+    /* GRADIENTES ENTRE CORES */
+    --background-image-cpdd-gradient-orange-cyan: linear-gradient(90deg,rgba(243, 72, 34, 1) 0%, rgba(0, 185, 189, 1) 100%);
+    --background-image-cpdd-gradient-orange-purple: linear-gradient(90deg,rgba(243, 72, 34, 1) 0%, rgba(77, 23, 183, 1) 100%);
+    --background-image-cpdd-gradient-orange-yellow: linear-gradient(90deg,rgba(243, 72, 34, 1) 0%, rgba(249, 168, 37, 1) 100%);
+}

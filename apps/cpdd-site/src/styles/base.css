@@ -1,0 +1,9 @@
+@layer base {
+  body {
+    @apply bg-background text-foreground overflow-x-hidden;
+  }
+
+  main {
+    @apply min-h-screen overflow-x-hidden;
+  }
+}

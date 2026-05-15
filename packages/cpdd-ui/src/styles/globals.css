@@ -7,3 +7,7 @@
 
 /* Tailwind Plugins */
 @plugin "@tailwindcss/forms";
+
+/* Design System */
+@import './palette.css';
+@import './typography.css';

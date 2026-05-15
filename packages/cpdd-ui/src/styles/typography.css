@@ -1,0 +1,91 @@
+@theme inline {
+  --text-50: 9px;
+  --text-50--line-height: 12px;
+  --text-100: 12px;
+  --text-100--line-height: 16px;
+  --text-200: 16px;
+  --text-200--line-height: 22px;
+  --text-300: 22px;
+  --text-300--line-height: 28px;
+  --text-400: 28px;
+  --text-400--line-height: 32px;
+  --text-500: 38px;
+  --text-500--line-height: 44px;
+  --text-600: 50px;
+  --text-600--line-height: 56px;
+  --text-700: 68px;
+  --text-700--line-height: 76px;
+  --text-800: 90px;
+  --text-800--line-height: 96px;
+
+  --font-body: var(--font-slabo-27px);
+  --font-heading: var(--font-barlow-condensed);
+  --font-subheading: var(--font-barlow);
+  --font-button: var(--font-barlow-condensed);
+  --font-body-alt: var(--font-barlow);
+  --font-footer: var(--font-barlow-condensed);
+}
+
+@utility display-lg {
+  @apply uppercase text-800 font-bold font-heading;
+}
+
+@utility display-md {
+  @apply uppercase text-700 font-bold font-heading;
+}
+
+@utility heading-lg {
+  @apply uppercase text-600 font-bold font-heading;
+}
+
+@utility heading-md {
+  @apply uppercase text-500 font-bold font-heading;
+}
+
+@utility heading-sm {
+  @apply uppercase text-400 font-semibold font-heading;
+}
+
+@utility subheading-lg {
+  @apply text-500 font-semibold font-subheading;
+}
+
+@utility subheading-md {
+  @apply text-400 font-medium font-subheading;
+}
+
+@utility subheading-sm {
+  @apply text-300 font-normal font-subheading;
+}
+
+@utility button-lg {
+  @apply uppercase text-300 text-center font-bold font-button;
+}
+
+@utility button-md {
+  @apply uppercase text-200 text-center font-semibold font-button;
+}
+
+@utility button-sm {
+  @apply uppercase text-100 text-center font-semibold font-button;
+}
+
+@utility body-lg {
+  @apply text-300 font-body;
+}
+
+@utility body-md {
+  @apply text-200 font-body;
+}
+
+@utility body-sm {
+  @apply text-100 font-body;
+}
+
+@utility body-alt-lg {
+  @apply text-300 font-body-alt;
+}
+
+@utility body-alt-md {
+  @apply text-200 font-body-alt;
+}
