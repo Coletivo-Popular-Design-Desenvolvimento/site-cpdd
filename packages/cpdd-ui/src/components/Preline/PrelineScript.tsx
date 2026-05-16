@@ -57,13 +57,13 @@ export default function PrelineScript() {
         const originalReplaceState = history.replaceState;
 
         history.pushState = function (...args) {
-            const result = originalPushState.apply(this, args as any);
+            const result = originalPushState.apply(this, args);
             globalThis.dispatchEvent(new Event(routeChangeEvent));
             return result;
         };
 
         history.replaceState = function (...args) {
-            const result = originalReplaceState.apply(this, args as any);
+            const result = originalReplaceState.apply(this, args);
             globalThis.dispatchEvent(new Event(routeChangeEvent));
             return result;
         };
