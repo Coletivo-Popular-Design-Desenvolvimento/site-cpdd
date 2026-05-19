@@ -47,6 +47,11 @@
   transform: skewY(0.001deg);
 }
 
+@utility clip-about-image {
+  -webkit-clip-path: url(#clip-about-image);
+  clip-path: url(#clip-about-image);
+}
+
 @utility container {
   margin-inline: auto;
   padding-inline: --spacing(6);

@@ -1,14 +1,18 @@
 import CpddLogoTexto from "@src/components/common/CpddLogoTexto";
+import WaveDivider from "./WaveDivider";
 
 const emailAddress = "coletivo@cpdd.com.br";
 
 export default function Footer () {
   return (
     <footer className="bg-cpdd-neutral-50 text-cpdd-neutral-950 py-7 md:py-17 relative font-footer">
-      <div className="top-0 absolute h-25 w-full bg-cpdd-orange-500 hidden md:block">
-        <div className="inline-block h-full w-2/5 bg-cpdd-neutral-50"/>
-        <div className="inline-block h-full clip-wave-right bg-cpdd-neutral-50"/>
-      </div>
+      <WaveDivider
+        className="absolute top-0 inset-x-0 h-25 max-md:hidden bg-cpdd-orange-500"
+        backgroundClassName="bg-cpdd-neutral-50"
+        widthClassName="w-2/5"
+        xPosition="left"
+        yPosition="bottom"
+      />
       <div className="container flex flex-col gap-y-3 md:gap-y-10">
         <div className="flex flex-col gap-3 md:flex-row md:justify-between md:items-center md:order-1">
           <div>
