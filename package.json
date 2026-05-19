@@ -13,9 +13,18 @@
     "dev:site": "pnpm --filter @cpdd/site dev",
     "dev:storybook": "pnpm --filter @cpdd/ui storybook",
     "lint": "pnpm --recursive lint",
+    "spell": "cspell --gitignore --no-progress \"**\"",
     "type-check": "pnpm --recursive exec tsc --noEmit"
   },
   "devDependencies": {
+    "@cspell/dict-css": "^4.1.1",
+    "@cspell/dict-docker": "^1.1.17",
+    "@cspell/dict-fonts": "^4.0.6",
+    "@cspell/dict-html": "^4.0.15",
+    "@cspell/dict-lorem-ipsum": "^4.0.5",
+    "@cspell/dict-pt-br": "^2.4.2",
+    "@cspell/dict-typescript": "^3.2.3",
+    "cspell": "^10.0.0",
     "typescript": "^5"
   }
 }
