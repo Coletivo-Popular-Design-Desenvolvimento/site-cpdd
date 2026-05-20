@@ -14,11 +14,8 @@
     "docker",
     "fonts",
     "html",
-    "javascript",
-    "json",
     "lorem-ipsum",
     "pt-br",
-    "tsx",
     "typescript"
   ],
   "caseSensitive": false,
