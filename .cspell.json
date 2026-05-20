@@ -7,7 +7,17 @@
     "**/build/**",
     "pnpm-lock.yaml"
   ],
-  "dictionaries": ["dicionario"],
+  "dictionaries": [
+    "dicionario",
+
+    "css",
+    "docker",
+    "fonts",
+    "html",
+    "lorem-ipsum",
+    "pt-br",
+    "typescript"
+  ],
   "caseSensitive": false,
   "dictionaryDefinitions": [
     {
@@ -18,7 +28,7 @@
   ],
   "words": [],
   "ignoreWords": [],
-  "import": [],
+  "import": ["@cspell/dict-pt-br/cspell-ext.json"],
   "languageSettings": [
     {
       "languageId": "markdown",
