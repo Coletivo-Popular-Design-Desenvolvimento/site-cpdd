@@ -16,7 +16,7 @@ export function ExpandedPanel({ panel, isActive, isMobileActive }: Readonly<Expa
 
     return (
         <div
-            className={`overflow-hidden transition-[max-height] duration-500 ease-in-out md:max-h-none md:flex-1 md:flex md:flex-row ${mobileHeightClass} ${desktopPointerClass}`}
+            className={`overflow-hidden transition-[max-height] duration-500 ease-in-out md:max-h-none md:flex-1 md:flex md:flex-row md:rounded-2xl ${mobileHeightClass} ${desktopPointerClass}`}
             aria-hidden={!isMobileActive && !isActive}
         >
             <div

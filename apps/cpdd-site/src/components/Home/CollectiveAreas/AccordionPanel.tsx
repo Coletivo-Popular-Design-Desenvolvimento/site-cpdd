@@ -17,7 +17,7 @@ export const AccordionPanel = forwardRef<HTMLDivElement, AccordionPanelProps>(
             <div
                 ref={ref}
                 data-index={dataIndex}
-                className="group flex flex-col md:flex-row items-stretch overflow-hidden md:rounded-2xl bg-neutral-900 basis-auto md:basis-[90px]"
+                className="group flex flex-col md:flex-row items-stretch overflow-hidden basis-auto md:basis-[90px] md:gap-6"
                 style={{
                     flexGrow: isActive ? 1 : 0,
                     transition: "flex-grow 500ms ease",
@@ -27,7 +27,7 @@ export const AccordionPanel = forwardRef<HTMLDivElement, AccordionPanelProps>(
                     onClick={onClick}
                     aria-expanded={isActive || isMobileActive}
                     aria-label={panel.label}
-                    className="w-full md:w-auto flex-none border-0 bg-transparent p-0 text-left outline-none focus-visible:ring-2 focus-visible:ring-white/50"
+                    className="w-full md:w-auto flex-none border-0 bg-transparent p-0 text-left outline-none focus-visible:inset-ring-2 focus-visible:ring-cpdd-neutral-50"
                 >
                     <CollapsedPanel panel={panel} isMobileActive={isMobileActive} />
                 </button>
