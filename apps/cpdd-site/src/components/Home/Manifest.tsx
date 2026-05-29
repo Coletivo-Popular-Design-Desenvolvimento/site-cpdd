@@ -9,7 +9,7 @@ export default function Manifest() {
     return (
         <section className="bg-cpdd-neutral-50 text-cpdd-neutral-950">
             <div className="container py-8 md:py-16">
-                <div className="md:px-27">
+                <div>
                     <h2 className="heading-sm mb-8 md:display-md md:mb-11">Manifesto</h2>
                     <div className="space-y-4 body-sm text-sm md:body-lg">
                         {paragraphs.map((text, i) => (
