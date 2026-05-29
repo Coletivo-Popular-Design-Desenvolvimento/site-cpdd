@@ -10,18 +10,16 @@ const text2 =
 export default function About() {
     return (
         <section className="bg-cpdd-neutral-950 text-cpdd-neutral-50 relative">
-            <div className="relative bg-cpdd-orange-500">
-                <WaveDivider
-                    backgroundClassName="bg-cpdd-neutral-950"
-                    className="absolute inset-0"
-                    widthClassName="min-w-42 w-5/12"
-                    xPosition="left"
-                    yPosition="bottom"
-                />
-                <div className="isolate container min-h-12 md:min-h-25 flex items-center">
-                    <h2 className="heading-sm md:display-md text-cpdd-orange-500 md:pt-11 mb-4">Sobre nós</h2>
-                </div>
-            </div>
+            <WaveDivider
+                backgroundClassName="bg-cpdd-neutral-950"
+                className="absolute inset-x-0 bg-cpdd-orange-500 h-12 md:h-25"
+                widthClassName="min-w-42 w-5/12"
+                xPosition="left"
+                yPosition="bottom"
+            />
+            <h2 className="isolate container heading-sm md:display-md text-cpdd-orange-500 mb-4 pt-6 md:pt-11">
+                Sobre nós
+            </h2>
             <div className="relative body-md lg:body-lg">
                 <div className="md:container relative aspect-video md:aspect-auto md:h-250">
                     <div className="relative h-full">
