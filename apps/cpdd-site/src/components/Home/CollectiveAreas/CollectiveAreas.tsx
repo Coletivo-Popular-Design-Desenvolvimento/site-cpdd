@@ -112,7 +112,7 @@ export function CollectiveAreas() {
                     yPosition="bottom"
                 />
                 <div className="isolate container min-h-12 md:min-h-25 flex items-center">
-                    <h2 className="heading-sm md:display-md" id="areas-do-coletivo-heading">
+                    <h2 className="heading-sm md:display-md md:pt-11 mb-4" id="areas-do-coletivo-heading">
                         Áreas do Coletivo
                     </h2>
                 </div>
