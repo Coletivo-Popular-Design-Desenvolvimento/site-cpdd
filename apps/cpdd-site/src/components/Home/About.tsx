@@ -19,17 +19,19 @@ export default function About() {
                     yPosition="bottom"
                 />
                 <div className="isolate container min-h-12 md:min-h-25 flex items-center">
-                    <h2 className="heading-sm md:display-md text-cpdd-orange-500">Sobre nós</h2>
+                    <h2 className="heading-sm md:display-md text-cpdd-orange-500 md:pt-11 mb-4">Sobre nós</h2>
                 </div>
             </div>
             <div className="relative body-md lg:body-lg">
-                <div className="container relative aspect-video md:aspect-auto md:h-250">
-                    <Image
-                        alt='A imagem de fundo é uma pintura retratando Lenin discursando para uma multidão de operários e soldados. A pintura é titulada "Lenin Proclama Poder Soviético", pintada por Vladimir Serov'
-                        src={imageSrc}
-                        fill={true}
-                        className="object-cover md:clip-about-image"
-                    />
+                <div className="md:container relative aspect-video md:aspect-auto md:h-250">
+                    <div className="relative h-full">
+                        <Image
+                            alt='A imagem de fundo é uma pintura retratando Lenin discursando para uma multidão de operários e soldados. A pintura é titulada "Lenin Proclama Poder Soviético", pintada por Vladimir Serov'
+                            src={imageSrc}
+                            fill={true}
+                            className="object-cover md:clip-about-image inset-~6!"
+                        />
+                    </div>
                 </div>
                 <div className="container py-6 grid gap-4 md:grid-cols-2 md:grid-rows-2 md:items-center md:gap-24 md:absolute md:inset-0">
                     <p className="md:col-2">{text1}</p>
