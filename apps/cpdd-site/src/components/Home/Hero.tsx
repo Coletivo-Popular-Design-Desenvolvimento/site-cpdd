@@ -1,3 +1,5 @@
+import ApoiaseLogo from "@components/common/ApoiaseLogo";
+
 export default function Hero() {
     return (
         <section className="bg-cpdd-orange-500 text-cpdd-neutral-950">
@@ -15,9 +17,9 @@ export default function Hero() {
                         <a
                             href="#"
                             target="_blank"
-                            className="w-full h-10 button-lg px-12 py-1 border-2 rounded-full border-black transition-colors hover:bg-cpdd-neutral-950 hover:text-cpdd-orange-500"
+                            className="w-full h-10 button-lg px-12 py-1 border-2 rounded-full border-black transition-colors hover:bg-cpdd-neutral-950 hover:text-cpdd-orange-500 flex items-center justify-center"
                         >
-                            <p className="w-full text-center">Quero fazer parte</p>
+                            <ApoiaseLogo className="fill-current w-25"/>
                         </a>
                         <a
                             href="#"
