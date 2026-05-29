@@ -1,5 +1,8 @@
 import ApoiaseLogo from "@components/common/ApoiaseLogo";
 
+const linkApoiase = 'https://apoia.se/cpdd';
+const linkFormulario = 'https://docs.google.com/forms/d/e/1FAIpQLSfRAP3ykDl7eq7XRjTytIn_35WXso2bnJwY1ZpeGrD5VklAAw/viewform';
+
 export default function Hero() {
     return (
         <section className="bg-cpdd-orange-500 text-cpdd-neutral-950">
@@ -15,14 +18,14 @@ export default function Hero() {
                     </p>
                     <div className="mt-4 w-full sm:max-w-108 flex flex-col items-start gap-4">
                         <a
-                            href="#"
+                            href={linkApoiase}
                             target="_blank"
                             className="w-full h-10 button-lg px-12 py-1 border-2 rounded-full border-black transition-colors hover:bg-cpdd-neutral-950 hover:text-cpdd-orange-500 flex items-center justify-center"
                         >
                             <ApoiaseLogo className="fill-current w-25"/>
                         </a>
                         <a
-                            href="#"
+                            href={linkFormulario}
                             target="_blank"
                             className="w-full h-10 button-lg px-12 py-1 border-2 rounded-full border-black transition-colors hover:bg-cpdd-neutral-950 hover:text-cpdd-orange-500"
                         >
