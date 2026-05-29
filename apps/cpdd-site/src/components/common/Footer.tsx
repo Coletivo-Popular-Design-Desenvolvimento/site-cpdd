@@ -14,7 +14,7 @@ export default function Footer () {
         yPosition="bottom"
       />
       <div className="container flex flex-col gap-y-3 md:gap-y-10">
-        <div className="flex flex-col gap-3 md:flex-row md:justify-between md:items-center md:order-1">
+        <div className="flex flex-col gap-3 md:flex-row md:gap-50 md:order-1">
           <div>
             <p className="mb-3 font-semibold text-sm md:text-3xl">Tecnologia nas mãos de quem trabalha</p>
             <p className="text-xs md:text-xl">Quer colaborar, sugerir ideias ou fazer parte dos nossos projetos?</p>
