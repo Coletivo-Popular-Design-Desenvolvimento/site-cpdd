@@ -13,10 +13,10 @@ export default function Projects() {
                 xPosition="left"
                 yPosition="bottom"
             />
-            <div className="isolate md:container pt-6 md:pt-11">
-                <h2 className="max-md:container heading-sm md:display-md text-cpdd-orange-500">
-                    Projetos em destaque
-                </h2>
+            <h2 className="isolate container heading-sm md:display-md text-cpdd-orange-500 pt-6 md:pt-11">
+                Projetos em destaque
+            </h2>
+            <div className="md:container">
                 <ul className="px-6 md:px-0 my-3 lg:my-5 flex gap-6 overflow-auto">
                     {projects.map((project) => (
                         <li tabIndex={0} className="flex-1 min-w-54 h-75 md:h-112 lg:h-150 relative rounded-lg lg:rounded-4xl overflow-clip group" key={project.id}>
