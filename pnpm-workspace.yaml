@@ -2,6 +2,11 @@ packages:
   - apps/*
   - packages/*
 
+allowBuilds:
+  esbuild: false
+  sharp: false
+  unrs-resolver: false
+
 onlyBuiltDependencies:
   - esbuild
   - sharp
