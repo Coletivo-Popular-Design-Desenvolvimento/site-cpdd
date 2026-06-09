@@ -1,3 +1,4 @@
+import RightArrow from "@src/components/common/RightArrow"
 import type { Panel } from "./types"
 
 interface CollapsedPanelProps {
@@ -27,6 +28,13 @@ export function CollapsedPanel({ panel, isMobileActive }: Readonly<CollapsedPane
             >
                 {panel.label}
             </span>
+            <span
+                className="transition-colors duration-500 ease-in-out"
+                style={{ color: isMobileActive ? panel.textColor : panel.panelColor }}
+            >
+                <RightArrow className={`transition-[rotate] fill-current md:hidden size-4 ${isMobileActive ? 'rotate-90' : ''}`}/>
+            </span>
+
 
             {/* Desktop: vertical text */}
             <span

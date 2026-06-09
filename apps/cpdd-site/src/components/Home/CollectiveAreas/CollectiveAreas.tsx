@@ -42,6 +42,8 @@ export function CollectiveAreas() {
 
     // Scroll-based: only ADDS panels to the active set, never removes
     useEffect(() => {
+        return; // Desativado atualmente, pois a experiência não ficou boa. Reavaliar depois.
+
         const mediaQuery = globalThis.matchMedia("(max-width: 767px)")
         let observer: IntersectionObserver | null = null
 
