@@ -8,10 +8,10 @@ export default function Hero() {
         <section className="bg-cpdd-orange-500 text-cpdd-neutral-950">
             <div className="container py-11 sm:py-47 flex items-center">
                 <div className="flex flex-col items-end sm:items-start">
-                    <h1 className="max-w-3xl heading-lg text-end sm:text-start sm:display-lg mb-11">
+                    <h1 className="max-w-3xl heading-lg sm:display-lg mb-11">
                         Tecnologia nas mãos de quem trabalha.
                     </h1>
-                    <p className="max-w-md text-end sm:text-start body-lg mb-2">
+                    <p className="max-w-md body-lg mb-2">
                         O CPDD organiza designers, desenvolvedores e profissionais de gestão que
                         acreditam que tecnologia deve servir à classe trabalhadora, não ao mercado.
                         Se você compartilha dessa visão, esse é o seu lugar.
