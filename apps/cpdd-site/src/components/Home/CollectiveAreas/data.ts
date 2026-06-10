@@ -6,7 +6,7 @@ export const panels: Panel[] = [
     {
         id: 0,
         label: 'Gestão',
-        panelColor: '#CC3300',
+        panelColor: '#C12400',
         textColor: '#FAFAFA',
         title: 'Objetivos',
         description:
