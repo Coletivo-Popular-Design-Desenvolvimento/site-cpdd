@@ -14,31 +14,29 @@ export function CollapsedPanel({ panel, isMobileActive }: Readonly<CollapsedPane
                 backgroundColor: isMobileActive ? panel.panelColor : undefined,
             }}
         >
-            <span
-                className="hidden md:block h-15 w-8 rounded-full shrink-0 transition-[height] duration-300 ease-in-out group-hover:h-28"
-                style={{ backgroundColor: panel.panelColor }}
-            />
-
             {/* Mobile: horizontal text — grows & recolors when active */}
             <span
                 className={`md:hidden font-semibold tracking-wider uppercase transition-all duration-500 ease-in-out ${
-                    isMobileActive ? "text-4xl font-bold" : "text-2xl"
+                    isMobileActive ? "heading-md" : "heading-sm"
                 }`}
-                style={{ color: isMobileActive ? panel.textColor : panel.panelColor }}
+                style={{ color: isMobileActive ? panel.textColor : "var(--color-cpdd-neutral-50)" }}
             >
                 {panel.label}
             </span>
             <span
-                className="transition-colors duration-500 ease-in-out"
-                style={{ color: isMobileActive ? panel.textColor : panel.panelColor }}
+                className="md:hidden transition-colors duration-500 ease-in-out"
+                style={{ color: isMobileActive ? panel.textColor : "var(--color-cpdd-neutral-50)" }}
             >
-                <RightArrow className={`transition-[rotate] fill-current md:hidden size-4 ${isMobileActive ? 'rotate-90' : ''}`}/>
+                <RightArrow className={`transition-[rotate] fill-current size-4 ${isMobileActive ? 'rotate-90' : ''}`}/>
             </span>
-
 
             {/* Desktop: vertical text */}
             <span
-                className="hidden md:block text-white text-4xl font-semibold tracking-wider rotate-180 transition-[font-size] duration-300 ease-in-out uppercase group-hover:text-5xl"
+                className="hidden md:block h-15 w-8 rounded-full shrink-0 transition-[height] duration-300 ease-in-out group-hover:h-28"
+                style={{ backgroundColor: panel.panelColor }}
+            />
+            <span
+                className="hidden md:block text-cpdd-neutral-50 tracking-wider rotate-180 transition-[font-size] duration-300 ease-in-out heading-md group-hover:heading-lg"
                 style={{ writingMode: "vertical-lr" }}
             >
                 {panel.label}

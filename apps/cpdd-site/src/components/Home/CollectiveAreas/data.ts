@@ -7,7 +7,7 @@ export const panels: Panel[] = [
         id: 0,
         label: 'Gestão',
         panelColor: '#CC3300',
-        textColor: '#FFFFFF',
+        textColor: '#FAFAFA',
         title: 'Objetivos',
         description:
             'É a área responsável por incorporar experiências e boas práticas de mercado, adaptando-as ao contexto marxista-leninista do nosso coletivo. Isso garante não apenas uma estrutura organizacional bem definida, alinhada aos princípios do centralismo democrático, mas também modelos de trabalho eficientes para a entrega de soluções digitais.',
@@ -22,7 +22,7 @@ export const panels: Panel[] = [
         id: 1,
         label: 'Design',
         panelColor: '#4D17B7',
-        textColor: '#FFFFFF',
+        textColor: '#FAFAFA',
         title: 'Objetivos',
         description:
             'Construir soluções visuais revolucionárias para a luta anticapitalista do coletivo. O design é nossa arma de agitação e organização, um instrumento que educa, mobiliza e unifica a classe trabalhadora.',
@@ -38,7 +38,7 @@ export const panels: Panel[] = [
         id: 2,
         label: 'Desenvolvimento',
         panelColor: '#00B9BD',
-        textColor: '#000000',
+        textColor: '#0C0C0C',
         title: 'Objetivos',
         description:
             'Entregar soluções técnicas para as demandas do coletivo, reunindo camaradas com experiências das mais variadas para criar ferramentas livres e alinhadas ao nosso projeto político.',
@@ -54,7 +54,7 @@ export const panels: Panel[] = [
         id: 3,
         label: 'Comunicação',
         panelColor: '#004853',
-        textColor: '#FFFFFF',
+        textColor: '#FAFAFA',
         title: 'Objetivos',
         description:
             'Gerir a imagem e cuidar da comunicação externa do coletivo. Propaganda e agitação.',
@@ -71,7 +71,7 @@ export const panels: Panel[] = [
         id: 4,
         label: 'Educacional',
         panelColor: '#FFA629',
-        textColor: '#000000',
+        textColor: '#0C0C0C',
         title: 'Objetivos',
         description:
             'É a área responsável por incorporar experiências e boas práticas de mercado, adaptando-as ao contexto marxista-leninista do nosso coletivo. Isso garante não apenas uma estrutura organizacional bem definida, alinhada aos princípios do centralismo democrático, mas também modelos de trabalho eficientes para a entrega de soluções digitais.',
@@ -86,7 +86,7 @@ export const panels: Panel[] = [
         id: 5,
         label: 'Acolhimento',
         panelColor: '#EEC898',
-        textColor: '#000000',
+        textColor: '#0C0C0C',
         title: 'Objetivos',
         description:
             'Garantir o bem-estar de todas as pessoas que fazem parte do coletivo. Trabalhamos para promover uma comunicação inclusiva e interativa, criando um ambiente igualitário e democrático para o desenvolvimento coletivo.',
