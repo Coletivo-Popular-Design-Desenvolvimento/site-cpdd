@@ -20,14 +20,14 @@ export default function Hero() {
                         <a
                             href={linkApoiase}
                             target="_blank"
-                            className="w-full h-10 button-lg px-12 py-1 border-2 rounded-full border-black transition-colors hover:bg-cpdd-neutral-950 hover:text-cpdd-orange-500 flex items-center justify-center"
+                            className="w-full h-10 button-lg px-12 py-1 border-2 rounded-full border-black transition-colors hover:bg-cpdd-orange-700 hover:text-cpdd-neutral-950 flex items-center justify-center"
                         >
                             <ApoiaseLogo className="fill-current w-25"/>
                         </a>
                         <a
                             href={linkFormulario}
                             target="_blank"
-                            className="w-full h-10 button-lg px-12 py-1 border-2 rounded-full border-black transition-colors hover:bg-cpdd-neutral-950 hover:text-cpdd-orange-500"
+                            className="w-full h-10 button-lg px-12 py-1 rounded-full transition-colors hover:bg-cpdd-neutral-50 hover:text-cpdd-neutral-950 bg-cpdd-neutral-950 text-cpdd-neutral-50"
                         >
                             <p className="w-full text-center">Junte-se à nós</p>
                         </a>
