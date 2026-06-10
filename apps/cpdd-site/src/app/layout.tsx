@@ -33,7 +33,7 @@ export default function RootLayout({
             <body className={`antialiased`}>
                 <SvgDefs />
                 <Navbar />
-                <main className='layout-grid'>{children}</main>
+                <main className="bg-cpdd-orange-500">{children}</main>
                 <Footer />
                 <PrelineScriptWrapper />
             </body>

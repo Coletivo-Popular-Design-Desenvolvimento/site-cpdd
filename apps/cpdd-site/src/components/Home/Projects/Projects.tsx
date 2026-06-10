@@ -5,7 +5,7 @@ import { projects } from "./data";
 
 export default function Projects() {
     return (
-        <section className="relative bg-cpdd-neutral-950 text-cpdd-neutral-50">
+        <section className="relative bg-cpdd-neutral-950 text-cpdd-neutral-50 mb-4">
             <WaveDivider
                 backgroundClassName="bg-cpdd-neutral-950"
                 className="absolute inset-0 h-12 md:h-25 bg-cpdd-orange-500"
