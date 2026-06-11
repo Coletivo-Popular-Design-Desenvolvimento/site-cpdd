@@ -115,7 +115,7 @@ export function CollectiveAreas() {
             <h2 className="text-cpdd-orange-500 container isolate heading-sm md:display-md pt-6 md:pt-11 mb-4" id="areas-do-coletivo-heading">
                 Áreas do Coletivo
             </h2>
-            <div className="md:container md:my-6 flex flex-col md:flex-row md:h-[640px] md:gap-6 md:rounded-2xl overflow-hidden">
+            <div className="lg:container lg:my-6 flex flex-col lg:flex-row lg:h-[640px] lg:gap-6 lg:rounded-2xl overflow-hidden">
                 {panels.map((panel, index) => (
                     <AccordionPanel
                         key={panel.id}
