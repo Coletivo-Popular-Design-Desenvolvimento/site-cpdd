@@ -20,7 +20,7 @@ export default function About() {
             <h2 className="isolate container heading-sm md:display-md text-cpdd-orange-500 mb-4 pt-6 md:pt-11">
                 Sobre nós
             </h2>
-            <div className="relative body-md lg:body-lg">
+            <div className="relative body-md md:body-lg">
                 <div className="md:container relative aspect-video md:aspect-auto md:h-250">
                     <div className="relative h-full">
                         <Image

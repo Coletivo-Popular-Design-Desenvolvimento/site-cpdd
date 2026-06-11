@@ -27,13 +27,13 @@ export function ExpandedPanel({ panel, isActive, isMobileActive }: Readonly<Expa
                 }}
             >
                 <div className={`flex flex-col gap-4 md:transition-opacity ${contentFadeClass}`}>
-                    <h3 className="text-2xl font-semibold">
+                    <h3 className="subheading-md font-semibold">
                         {panel.title}
                     </h3>
                     <p className="body-md leading-relaxed">
                         {panel.description}
                     </p>
-                    <h4 className="text-xl font-semibold mt-2">
+                    <h4 className="subheading-md font-semibold mt-2">
                         {panel.activitiesTitle}
                     </h4>
                     <ul className="body-md list-disc pl-5 space-y-1">

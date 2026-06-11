@@ -11,7 +11,7 @@ export default function Manifest() {
             <div className="container py-8 md:py-16">
                 <div>
                     <h2 className="heading-sm mb-8 md:display-md md:mb-11">Manifesto</h2>
-                    <div className="space-y-4 body-sm text-sm md:body-lg">
+                    <div className="space-y-4 body-md md:body-lg">
                         {paragraphs.map((text, i) => (
                             <p key={i}>{text}</p>
                         ))}
@@ -19,7 +19,7 @@ export default function Manifest() {
                     <Link
                         hidden
                         href="#"
-                        className="block mx-auto max-w-2/3 mt-8 text-center rounded-lg button-sm text-sm py-3 border-2 border-cpdd-neutral-950 md:border-4 md:button-lg md:mt-11 md:max-w-2/5 md:mr-0"
+                        className="block mx-auto max-w-2/3 mt-8 text-center rounded-lg button-md py-3 border-2 border-cpdd-neutral-950 md:border-4 md:button-lg md:mt-11 md:max-w-2/5 md:mr-0"
                     >
                         Saiba mais
                     </Link>
