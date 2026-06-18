@@ -20,8 +20,6 @@ O site é a porta de entrada para nossos camaradas nos conhecerem.
   - [Estrutura](#estrutura)
       - [Estrutura Detalhada:](#estrutura-detalhada)
 
-
-
 ## Dependências
 - [Node.js](https://nodejs.org/docs/latest-v22.x/api/index.html) >= 22
 - [Next.js](https://nextjs.org/docs)
@@ -65,6 +63,7 @@ pnpm install
 
 ## Rodando
 Como o projeto tem 2 aplicações (Site e Design System) os comandos são divididos entre essas aplicações.
+
 #### Rodando o site em modo desenvolvedor:
 ```bash
 pnpm dev:site
@@ -75,34 +74,40 @@ pnpm dev:site
 pnpm dev:storybook
 ```
 
-Demais scripts podem ser encontrados no packages.json na paz raiz do projeto
+Demais scripts podem ser encontrados no package.json na pasta raiz do projeto.
 
 ## Contribuindo
 No coletivo seguimos o [Commits Convencionais](https://www.conventionalcommits.org/pt-br/v1.0.0/) e [Branchs Convencionais](https://conventional-branch.github.io/pt-br/) para nomear commits/branchs.
 
-Se ainda não clonou o repositório [clone o projeto do github](#1-clone-o-projeto-do-github)
+Se ainda não clonou o repositório [clone o projeto do github](#1-clone-o-projeto-do-github).
 
 ### Processo de desenvolvimento:
+
 #### 1. Abra o terminal na pasta raiz do projeto
+
 #### 2. Crie uma nova branch: <br>
-*seguindo o padrão de nomeação de branch*
+*Seguindo o padrão de nomeação de branch*
 ```bash
 git switch -c tipo/id-nome-descrição-curta
 ```
+
 #### 3. Commit suas mudanças
 *Seguindo o padrão de nomeação de commits*
 ```bash
 git add arquivo1 arquivo2 etc
 ```
+
 ```bash
 git commit -m "tipo: descrição curta"
 ou
 git commit -m "tipo: descrição curta" -m "descrição longa"
 ```
+
 #### 4. Envie suas mudanças para o Github
 ```bash
 git push origin nome-da-sua-branch --set-upstream
 ```
+
 #### 5. Abra uma PR (Pull Request)
 1. Troque a branch para sua branch
 2. Clique em Contribuir → Abrir Pull Request

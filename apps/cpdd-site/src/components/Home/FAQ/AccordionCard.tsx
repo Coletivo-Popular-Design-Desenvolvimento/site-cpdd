@@ -1,7 +1,7 @@
 'use client';
 
 import { useId, useState } from "react";
-import RightArrow from "./RightArrow";
+import RightArrow from "@components/common/RightArrow";
 
 export default function AccordionCard ({label, description}: { label: string, description: string }) {
   const [isOpen, setIsOpen] = useState(false);

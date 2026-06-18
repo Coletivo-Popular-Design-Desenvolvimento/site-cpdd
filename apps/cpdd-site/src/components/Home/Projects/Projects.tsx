@@ -5,21 +5,17 @@ import { projects } from "./data";
 
 export default function Projects() {
     return (
-        <section className="bg-cpdd-neutral-950 text-cpdd-neutral-50">
-            <div className="relative bg-cpdd-orange-500">
-                <WaveDivider
-                    backgroundClassName="bg-cpdd-neutral-950"
-                    className="absolute inset-0"
-                    widthClassName="min-w-65 md:min-w-150 w-3/5"
-                    xPosition="left"
-                    yPosition="bottom"
-                />
-                <div className="isolate container min-h-12 md:min-h-25 flex items-center">
-                    <h2 className="heading-sm md:display-md text-cpdd-orange-500">
-                        Projetos em destaque
-                    </h2>
-                </div>
-            </div>
+        <section className="relative bg-cpdd-neutral-950 text-cpdd-neutral-50 mb-4">
+            <WaveDivider
+                backgroundClassName="bg-cpdd-neutral-950"
+                className="absolute inset-0 h-12 md:h-25 bg-cpdd-orange-500"
+                widthClassName="min-w-65 md:min-w-150 w-3/5"
+                xPosition="left"
+                yPosition="bottom"
+            />
+            <h2 className="isolate container heading-sm md:display-md text-cpdd-orange-500 pt-6 md:pt-11">
+                Projetos em destaque
+            </h2>
             <div className="md:container">
                 <ul className="px-6 md:px-0 my-3 lg:my-5 flex gap-6 overflow-auto">
                     {projects.map((project) => (

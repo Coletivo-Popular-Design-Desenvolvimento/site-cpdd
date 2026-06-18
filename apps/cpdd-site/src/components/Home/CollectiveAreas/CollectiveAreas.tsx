@@ -3,6 +3,7 @@
 import { useState, useRef, useEffect, useCallback } from "react"
 import { panels } from "./data"
 import { AccordionPanel } from "./AccordionPanel"
+import WaveDivider from "@components/common/WaveDivider"
 
 export function CollectiveAreas() {
     const [activeIndex, setActiveIndex] = useState(0)
@@ -41,6 +42,8 @@ export function CollectiveAreas() {
 
     // Scroll-based: only ADDS panels to the active set, never removes
     useEffect(() => {
+        return; // Desativado atualmente, pois a experiência não ficou boa. Reavaliar depois.
+
         const mediaQuery = globalThis.matchMedia("(max-width: 767px)")
         let observer: IntersectionObserver | null = null
 
@@ -101,14 +104,18 @@ export function CollectiveAreas() {
     }, [])
 
     return (
-        <section className="container relative w-full py-12 px-6 overflow-hidden" aria-labelledby="areas-do-coletivo-heading">
-            <div className="flex items-center justify-between mb-8">
-                <h2 className="text-3xl md:text-4xl font-bold text-white" id="areas-do-coletivo-heading">
-                    Áreas do Coletivo
-                </h2>
-            </div>
-
-            <div className="flex flex-col md:flex-row md:h-[640px] md:gap-2 md:rounded-2xl overflow-hidden">
+        <section className="relative w-full overflow-hidden bg-cpdd-neutral-950" aria-labelledby="areas-do-coletivo-heading">
+            <WaveDivider
+                backgroundClassName="bg-cpdd-neutral-950"
+                className="bg-cpdd-neutral-50 absolute inset-x-0 h-12 md:h-25"
+                widthClassName="min-w-56 md:min-w-130 w-5/12"
+                xPosition="left"
+                yPosition="bottom"
+            />
+            <h2 className="text-cpdd-orange-500 container isolate heading-sm md:display-md pt-6 md:pt-11 mb-4" id="areas-do-coletivo-heading">
+                Áreas do Coletivo
+            </h2>
+            <div className="lg:container lg:my-6 flex flex-col lg:flex-row lg:h-[640px] lg:gap-6 lg:rounded-2xl overflow-hidden">
                 {panels.map((panel, index) => (
                     <AccordionPanel
                         key={panel.id}
@@ -121,6 +128,13 @@ export function CollectiveAreas() {
                     />
                 ))}
             </div>
+            <WaveDivider
+                backgroundClassName="bg-cpdd-neutral-950"
+                className="bg-cpdd-orange-500 h-12 md:h-25"
+                widthClassName="min-w-56 md:min-w-130 w-5/12"
+                xPosition="left"
+                yPosition="top"
+            />
         </section>
     )
 }

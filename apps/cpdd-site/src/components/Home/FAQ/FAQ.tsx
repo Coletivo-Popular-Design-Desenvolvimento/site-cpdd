@@ -6,8 +6,8 @@ export default function FAQ() {
         <section className="bg-cpdd-orange-500 text-cpdd-neutral-950">
             <div className="container py-6 flex flex-col gap-6 md:flex-row md:gap-34 md:items-center">
                 <div className="md:flex-1">
-                    <h2 className="font-heading text-5xl font-semibold mb-2 md:mb-6 md:text-8xl">FAQ</h2>
-                    <p className="font-body text-sm md:text-xl">Lorem ipsum dolor sit amet consectetur. Et urna maecenas amet sodales ut tellus enim neque porta. Integer convallis nulla cras convallis. Posuere vulputate tortor ornare vestibulum auctor. Facilisi elementum in rhoncus dictum. Vitae nunc potenti neque pretium semper. Commodo fermentum tellus pulvinar condimentum arcu nunc. Nulla dignissim ultricies amet vitae nibh. Volutpat viverra lacus accumsan sit mi.</p>
+                    <h2 className="heading-lg mb-2 md:mb-6 md:display-lg">FAQ</h2>
+                    <p className="body-md md:body-lg">Reunimos aqui as perguntas mais comuns de quem está conhecendo o CPDD. Antes de participar, é normal querer entender como o coletivo funciona, o que se espera de quem entra e como é a rotina por dentro. As respostas abaixo cobrem o essencial. Se a sua dúvida não estiver na lista, é só falar com a gente.</p>
                     <button
                         className="button-lg border-4 border-cpdd-neutral-950 rounded-full py-3 text-xl font-bold hidden md:block w-8/10 mx-auto mt-16"
                         type="button"
