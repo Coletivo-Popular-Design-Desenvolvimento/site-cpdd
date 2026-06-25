@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import '../styles/globals.css';
 
+import { GoogleAnalytics } from '@next/third-parties/google';
 import Navbar from '@src/components/common/Navbar';
 import Footer from '@src/components/common/Footer';
 import PrelineScriptWrapper from '@components/common/PrelineScriptWrapper';
@@ -30,6 +31,7 @@ export default function RootLayout({
 }>) {
     return (
         <html lang='en' className={`${slabo27px.variable} ${barlow.variable} ${barlowCondensed.variable}`}>
+            <GoogleAnalytics gaId={process.env.NEXT_PUBLIC_GA_ID!}/>
             <body className={`antialiased`}>
                 <SvgDefs />
                 <Navbar />
