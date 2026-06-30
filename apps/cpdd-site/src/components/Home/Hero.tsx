@@ -1,7 +1,5 @@
-'use client';
-
-import { sendGAEvent } from "@next/third-parties/google";
 import ApoiaseLogo from "@components/common/ApoiaseLogo";
+import { AnalyticsLink } from "@lib/analytics";
 
 const linkApoiase = 'https://apoia.se/cpdd';
 const linkFormulario = 'https://docs.google.com/forms/d/e/1FAIpQLSfRAP3ykDl7eq7XRjTytIn_35WXso2bnJwY1ZpeGrD5VklAAw/viewform';
@@ -27,22 +25,14 @@ export default function Hero() {
                         >
                             <ApoiaseLogo className="fill-current w-25"/>
                         </a>
-                        <a
+                        <AnalyticsLink
+                            analyticsParams={{ eventName: 'cta_participe_click', ctaLocation: 'hero' }}
                             href={linkFormulario}
-                            onClick={(e) =>
-                                sendGAEvent('event', 'cta_participe_click', {
-                                    cta_loc: "hero",
-                                    cta_text: e.currentTarget.innerText.trim(),
-                                    link_url: e.currentTarget.href,
-                                    link_domain: e.currentTarget.hostname,
-                                    page_location: location.href,
-                                })
-                            }
                             target="_blank"
                             className="w-full h-10 button-lg px-12 py-1 rounded-full transition-colors hover:bg-cpdd-neutral-50 hover:text-cpdd-neutral-950 bg-cpdd-neutral-950 text-cpdd-neutral-50"
                         >
                             <p className="w-full text-center">Junte-se à nós</p>
-                        </a>
+                        </AnalyticsLink>
                     </div>
                 </div>
             </div>

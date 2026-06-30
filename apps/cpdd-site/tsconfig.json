@@ -20,8 +20,9 @@
       }
     ],
     "paths": {
-      "@src/*": ["./src/*"],
+      "@lib/*": ["./src/lib/*"],
       "@components/*": ["./src/components/*"],
+      "@src/*": ["./src/*"],
       "@cpdd/ui": ["../../packages/cpdd-ui/src/index.ts"],
       "@cpdd/ui/*": ["../../packages/cpdd-ui/src/*"]
     }
