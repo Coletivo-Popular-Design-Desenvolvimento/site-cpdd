@@ -18,13 +18,14 @@ export default function Hero() {
                         Se você compartilha dessa visão, esse é o seu lugar.
                     </p>
                     <div className="mt-4 w-full sm:max-w-108 flex flex-col items-start gap-4">
-                        <a
+                        <AnalyticsLink
+                            analyticsParams={{ eventName: 'cta_apoiase_click', ctaLocation: 'hero', ctaText: 'Apoia.se' }}
                             href={linkApoiase}
                             target="_blank"
                             className="w-full h-10 button-lg px-12 py-1 border-2 rounded-full border-black transition-colors hover:bg-cpdd-orange-700 hover:text-cpdd-neutral-950 flex items-center justify-center"
                         >
                             <ApoiaseLogo className="fill-current w-25"/>
-                        </a>
+                        </AnalyticsLink>
                         <AnalyticsLink
                             analyticsParams={{ eventName: 'cta_participe_click', ctaLocation: 'hero' }}
                             href={linkFormulario}
