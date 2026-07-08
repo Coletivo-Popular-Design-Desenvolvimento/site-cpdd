@@ -1,8 +1,9 @@
 import type { Metadata } from 'next';
 import '../styles/globals.css';
 
-import Navbar from '@src/components/common/Navbar';
-import Footer from '@src/components/common/Footer';
+import { AnalyticsScript } from '@lib/analytics';
+import Navbar from '@components/common/Navbar';
+import Footer from '@components/common/Footer';
 import PrelineScriptWrapper from '@components/common/PrelineScriptWrapper';
 import SvgDefs from '@components/common/SvgDefs';
 
@@ -30,6 +31,7 @@ export default function RootLayout({
 }>) {
     return (
         <html lang='en' className={`${slabo27px.variable} ${barlow.variable} ${barlowCondensed.variable}`}>
+            <AnalyticsScript />
             <body className={`antialiased`}>
                 <SvgDefs />
                 <Navbar />

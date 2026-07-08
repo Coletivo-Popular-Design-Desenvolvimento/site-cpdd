@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@cpdd/ui": "workspace:*",
+    "@next/third-parties": "16.1.5",
     "next": "16.1.5",
     "preline": "^3.2.3",
     "react": "19.2.0",
