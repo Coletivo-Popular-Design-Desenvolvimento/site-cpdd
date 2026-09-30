@@ -20,7 +20,7 @@ export default function Projects() {
                 <ul className="px-6 md:px-0 my-3 lg:my-5 flex gap-6 overflow-auto">
                     {projects.map((project) => (
                         <li tabIndex={0} className="flex-1 min-w-54 h-75 md:h-112 lg:h-150 relative rounded-lg lg:rounded-4xl overflow-clip group" key={project.id}>
-                            <Image src={project.image} alt="" fill className="object-cover"/>
+                            <Image src={project.image} alt={project.imageAlt} fill className="object-cover"/>
                             <div
                                 className="isolate h-full flex items-end px-4 lg:px-9 py-6 lg:py-12 bg-linear-to-t from-black/80 to-transparent to-75% group-hover:hidden group-focus-within:hidden"
                                 aria-hidden={true} // oculta para leitores de tela
@@ -31,7 +31,9 @@ export default function Projects() {
                                 <div className="isolate absolute inset-0 bg-cpdd-orange-500/94 text-cpdd-neutral-950 p-4 lg:p-9 lg:pt-16 flex flex-col">
                                     <h3 className="heading-sm md:heading-md lg:heading-lg mb-2 md:mb-6 lg:mb-12 text-balance">{project.title}</h3>
                                     <p className="body-alt-md lg:body-alt-lg mb-2 md:mb-6 lg:mb-12">{project.description}</p>
-                                    <p className="body-alt-md lg:body-alt-lg mb-2 md:mb-6 lg:mb-12">Publicado em {project.publishedAt}.</p>
+                                    <p className="body-alt-sm lg:body-alt-md mt-auto">
+                                        <strong className="uppercase font-semibold block">Sobre a pintura</strong> {project.imageDesc}
+                                    </p>
                                     <Link
                                         hidden
                                         className="button-md md:button-lg block border-2 md:border-4 border-cpdd-neutral-950 rounded-lg py-1 md:py-3 mt-auto"
