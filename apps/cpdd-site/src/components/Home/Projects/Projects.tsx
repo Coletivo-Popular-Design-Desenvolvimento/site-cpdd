@@ -5,17 +5,21 @@ import { projects } from "./data";
 
 export default function Projects() {
     return (
-        <section className="relative bg-cpdd-neutral-950 text-cpdd-neutral-50 mb-4">
-            <WaveDivider
-                backgroundClassName="bg-cpdd-neutral-950"
-                className="absolute inset-0 h-12 md:h-25 bg-cpdd-orange-500"
-                widthClassName="min-w-65 md:min-w-150 w-3/5"
-                xPosition="left"
-                yPosition="bottom"
-            />
-            <h2 className="isolate container heading-sm md:display-md text-cpdd-orange-500 pt-6 md:pt-11">
-                Projetos em destaque
-            </h2>
+        <section className="bg-cpdd-neutral-950 text-cpdd-neutral-50">
+            <div className="relative bg-cpdd-orange-500 text-cpdd-neutral-950">
+                <WaveDivider
+                    backgroundClassName="bg-cpdd-neutral-950"
+                    className="absolute inset-0"
+                    widthClassName="w-0 sm:w-1/3 md:w-0 lg:w-1/4 xl:w-1/3"
+                    xPosition="right"
+                    yPosition="top"
+                />
+                <div className="isolate container min-h-12 md:min-h-25 flex items-center">
+                    <h2 className="heading-sm md:display-md">
+                        Projetos em destaque
+                    </h2>
+                </div>
+            </div>
             <div className="md:container">
                 <ul className="px-6 md:px-0 my-3 lg:my-5 flex gap-6 overflow-auto">
                     {projects.map((project) => (
@@ -52,8 +56,8 @@ export default function Projects() {
                     backgroundClassName="bg-cpdd-neutral-950"
                     className="absolute inset-0"
                     widthClassName="w-1/2"
-                    yPosition="top"
-                    xPosition="right"
+                    yPosition="bottom"
+                    xPosition="left"
                 />
                 <div className="isolate container min-h-12 md:min-h-25 flex items-center">
                     <Link
