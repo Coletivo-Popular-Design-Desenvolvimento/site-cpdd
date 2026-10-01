@@ -21,9 +21,9 @@ export default function Projects() {
                 </div>
             </div>
             <div className="md:container">
-                <ul className="px-6 md:px-0 my-3 lg:my-5 flex gap-6 overflow-auto">
+                <ul className="px-6 md:px-0 my-3 lg:my-5 flex gap-6 overflow-auto snap-x snap-mandatory">
                     {projects.map((project) => (
-                        <li tabIndex={0} className="flex-1 min-w-54 h-75 md:h-112 lg:h-150 relative rounded-2xl lg:rounded-4xl overflow-clip group" key={project.id}>
+                        <li tabIndex={0} className="flex-1 min-w-54 h-75 md:h-112 lg:h-150 relative rounded-2xl lg:rounded-4xl overflow-clip snap-center group" key={project.id}>
                             <Image src={project.image} alt={project.imageAlt} fill className="object-cover"/>
                             <div
                                 className="isolate h-full flex items-end px-4 lg:px-9 py-6 lg:py-12 bg-linear-to-t from-black from-15% to-transparent to-55% group-hover:hidden group-focus-within:hidden"
@@ -36,7 +36,8 @@ export default function Projects() {
                                     <h3 className="heading-sm md:heading-md lg:heading-lg mb-2 md:mb-6 lg:mb-12 text-balance">{project.title}</h3>
                                     <p className="body-alt-sm md:body-alt-md lg:body-alt-lg mb-2 md:mb-6 lg:mb-12">{project.description}</p>
                                     <p className="body-alt-sm lg:body-alt-md mt-auto">
-                                        <strong className="uppercase font-semibold block">Sobre a pintura</strong> {project.imageDesc}
+                                        <strong className="font-semibold block">Sobre a pintura: </strong>
+                                        {project.imageDesc}
                                     </p>
                                     <Link
                                         hidden

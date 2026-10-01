@@ -12,7 +12,7 @@ export const projects = [
     {
         id: 2,
         title: 'Jabuti',
-        description: 'Parlamento não decide no vazio, decide a favor de alguém. O Jabuti mostra o que cada político aprova e quem ganha com isso. Não é para escolher melhor entre eles. É para saber de que lado cada um está.',
+        description: 'Votar não é decidir. O Jabuti mostra o que o Congresso aprova e quem ganha com isso, para você ver a quem essa democracia serve.',
         image: '/projeto-jabuti.webp',
         imageAlt: 'A imagem é uma pintura da assembleia de organização do kolkhoz',
         imageDesc: 'V. Dilka, Assembleia de organização do kolkhoz, entre 1927 e 1930. Retrata camponeses reunidos para fundar uma fazenda coletiva, decidindo juntos o destino da terra onde vivem.',
@@ -22,7 +22,7 @@ export const projects = [
     {
         id: 3,
         title: 'Hackathon',
-        description: 'A gente abre as portas e chama quem quiser construir. Em poucos dias, gente que nunca se viu resolve junto um problema de quem precisa. Não é vitrine de talento. É prova de que dá para fazer tecnologia por outro motivo.',
+        description: 'Tecnologia não nasce neutra, serve a quem a controla. No Hackathon a gente abre as portas e constrói junto, em dias, o que o mercado não faz por quem precisa.',
         image: '/projeto-hackathon.webp',
         imageAlt: 'A imagem é uma pintura dos Rabfakovtsy',
         imageDesc: 'Ilya Vasiltchenko, Rabfakovtsy, 1971. Retrata os rabfaks, cursos que levavam operários sem escolaridade formal para dentro das universidades.',
