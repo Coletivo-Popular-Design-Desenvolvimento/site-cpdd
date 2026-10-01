@@ -22,7 +22,7 @@ export const projects = [
     {
         id: 3,
         title: 'Hackathon',
-        description: 'Voto informado não devia depender de quem tem tempo de ler projeto de lei. O Jabuti coloca na mão de qualquer pessoa o que o político faz, não o que ele promete. Escolher fica mais difícil de terceirizar.',
+        description: 'A gente abre as portas e chama quem quiser construir. Em poucos dias, gente que nunca se viu resolve junto um problema de quem precisa. Não é vitrine de talento. É prova de que dá para fazer tecnologia por outro motivo.',
         image: '/projeto-hackathon.webp',
         imageAlt: 'A imagem é uma pintura dos Rabfakovtsy',
         imageDesc: 'Ilya Vasiltchenko, Rabfakovtsy, 1971. Retrata os rabfaks, cursos que levavam operários sem escolaridade formal para dentro das universidades.',
