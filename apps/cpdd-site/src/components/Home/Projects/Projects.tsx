@@ -32,10 +32,10 @@ export default function Projects() {
                                 <h3 className="heading-sm md:heading-md lg:heading-lg text-balance">{project.title}</h3>
                             </div>
                             <div className="sr-only group-hover:not-sr-only group-focus-within:not-sr-only">
-                                <div className="isolate absolute inset-0 bg-cpdd-orange-500/94 text-cpdd-neutral-950 p-4 lg:p-9 lg:pt-16 flex flex-col">
+                                <div className="isolate absolute inset-0 bg-cpdd-orange-500/94 text-cpdd-neutral-950 p-4 pt-8 lg:p-9 lg:pt-16 flex flex-col">
                                     <h3 className="heading-sm md:heading-md lg:heading-lg mb-2 md:mb-6 lg:mb-12 text-balance">{project.title}</h3>
-                                    <p className="body-alt-sm md:body-alt-md lg:body-alt-lg mb-2 md:mb-6 lg:mb-12">{project.description}</p>
-                                    <p className="body-alt-sm lg:body-alt-md mt-auto">
+                                    <p className="body-alt-sm text-sm md:body-alt-md lg:body-alt-lg mb-2 md:mb-6 lg:mb-12">{project.description}</p>
+                                    <p className="body-alt-sm max-lg:font-light max-lg:leading-none lg:body-alt-md mt-auto">
                                         <strong className="font-semibold block">Sobre a pintura: </strong>
                                         {project.imageDesc}
                                     </p>
