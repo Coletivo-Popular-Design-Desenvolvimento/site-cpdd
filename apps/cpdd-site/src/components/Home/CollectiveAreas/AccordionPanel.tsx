@@ -13,6 +13,7 @@ interface AccordionPanelProps {
 
 export const AccordionPanel = forwardRef<HTMLDivElement, AccordionPanelProps>(
     function AccordionPanel({ panel, isActive, isMobileActive, onClick, dataIndex }, ref) {
+        const id = `collective-areas-panel-${panel.id}`;
         return (
             <div
                 ref={ref}
@@ -27,11 +28,12 @@ export const AccordionPanel = forwardRef<HTMLDivElement, AccordionPanelProps>(
                     onClick={onClick}
                     aria-expanded={isActive || isMobileActive}
                     aria-label={panel.label}
+                    aria-controls={id}
                     className="w-full lg:w-auto flex-none border-0 bg-transparent p-0 text-left outline-none focus-visible:inset-ring-2 focus-visible:ring-cpdd-neutral-50"
                 >
                     <CollapsedPanel panel={panel} isMobileActive={isMobileActive} />
                 </button>
-                <ExpandedPanel panel={panel} isActive={isActive} isMobileActive={isMobileActive} />
+                <ExpandedPanel panel={panel} id={id} isActive={isActive} isMobileActive={isMobileActive} />
             </div>
         )
     }
