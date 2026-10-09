@@ -5,18 +5,20 @@ import type { Panel } from './types';
 export const panels: Panel[] = [
     {
         id: 0,
-        label: 'Gestão',
-        panelColor: '#C12400',
-        textColor: '#FAFAFA',
+        label: 'Desenvolvimento',
+        panelColor: '#00B9BD',
+        textColor: '#0C0C0C',
         title: 'Objetivos',
         description:
-            'É a área responsável por incorporar experiências e boas práticas de mercado, adaptando-as ao contexto marxista-leninista do nosso coletivo. Isso garante não apenas uma estrutura organizacional bem definida, alinhada aos princípios do centralismo democrático, mas também modelos de trabalho eficientes para a entrega de soluções digitais.',
+            'Entregar soluções técnicas para as demandas do coletivo, reunindo camaradas com experiências das mais variadas para criar ferramentas livres e alinhadas ao nosso projeto político.',
         activitiesTitle: 'Atividades Principais',
         activities: [
-            'Treinamentos sobre metodologia ágeis para otimizar a entrega de projetos;',
-            'Atuar diretamente nos times de desenvolvimento das soluções planejadas.'
+            'Arquitetura de software;',
+            'Desenvolvimento de soluções tecnológicas.',
+            'Pesquisa de novas tecnologias abertas para levantar casos de uso que ajudem em nossa luta.'
         ],
-        image: 'https://picsum.photos/seed/panel0/800/600'
+        image: '/area-desenvolvimento.png',
+        imageDesc: 'Kateryna Yushchenko',
     },
     {
         id: 1,
@@ -32,26 +34,11 @@ export const panels: Panel[] = [
             'Reforçar o Design Universal incluindo todes;',
             'Construção constante da nossa identidade visual;'
         ],
-        image: 'https://picsum.photos/seed/panel1/800/600'
+        image: '/area-design.png',
+        imageDesc: 'Alexander Rodchenko',
     },
     {
         id: 2,
-        label: 'Desenvolvimento',
-        panelColor: '#00B9BD',
-        textColor: '#0C0C0C',
-        title: 'Objetivos',
-        description:
-            'Entregar soluções técnicas para as demandas do coletivo, reunindo camaradas com experiências das mais variadas para criar ferramentas livres e alinhadas ao nosso projeto político.',
-        activitiesTitle: 'Atividades Principais',
-        activities: [
-            'Arquitetura de software;',
-            'Desenvolvimento de soluções tecnológicas.',
-            'Pesquisa de novas tecnologias abertas para levantar casos de uso que ajudem em nossa luta.'
-        ],
-        image: 'https://picsum.photos/seed/panel2/800/600'
-    },
-    {
-        id: 3,
         label: 'Comunicação',
         panelColor: '#004853',
         textColor: '#FAFAFA',
@@ -65,7 +52,24 @@ export const panels: Panel[] = [
             'Eventos: divulgação, cobertura ao vivo e follow-up;',
             'Produtos: criação de materiais gráficos, camisetas e brindes;'
         ],
-        image: 'https://picsum.photos/seed/panel3/800/600'
+        image: '/area-comunicacao.png',
+        imageDesc: 'Antonio Gramsci',
+    },
+    {
+        id: 3,
+        label: 'Gestão',
+        panelColor: '#C12400',
+        textColor: '#FAFAFA',
+        title: 'Objetivos',
+        description:
+            'É a área responsável por incorporar experiências e boas práticas de mercado, adaptando-as ao contexto marxista-leninista do nosso coletivo. Isso garante não apenas uma estrutura organizacional bem definida, alinhada aos princípios do centralismo democrático, mas também modelos de trabalho eficientes para a entrega de soluções digitais.',
+        activitiesTitle: 'Atividades Principais',
+        activities: [
+            'Treinamentos sobre metodologia ágeis para otimizar a entrega de projetos;',
+            'Atuar diretamente nos times de desenvolvimento das soluções planejadas.'
+        ],
+        image: '/area-gestao.png',
+        imageDesc: 'Rosa Luxemburgo',
     },
     {
         id: 4,
@@ -80,7 +84,8 @@ export const panels: Panel[] = [
             'Treinamentos sobre metodologia ágeis para otimizar a entrega de projetos;',
             'Atuar diretamente nos times de desenvolvimento das soluções planejadas.'
         ],
-        image: 'https://picsum.photos/seed/panel4/800/600'
+        image: '/area-educacional.png',
+        imageDesc: 'Paulo Freire',
     },
     {
         id: 5,
@@ -96,6 +101,7 @@ export const panels: Panel[] = [
             'Acompanhamento de recrutamento de noves camarades;',
             'A reunião de Boas-Vindas;'
         ],
-        image: 'https://picsum.photos/seed/panel5/800/600'
+        image: '/area-acolhimento.png',
+        imageDesc: 'Frantz Fanon',
     }
 ];
