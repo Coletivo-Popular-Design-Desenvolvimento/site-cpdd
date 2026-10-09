@@ -8,4 +8,5 @@ export interface Panel {
     activitiesTitle: string
     activities: string[]
     image: string
+    imageDesc: string
 }
