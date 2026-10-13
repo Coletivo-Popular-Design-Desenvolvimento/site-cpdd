@@ -9,33 +9,31 @@ const linkFormulario = "https://cpdd.notion.site/372c5f6d25f880fdb91bca16c5ad1ec
 
 export default function Hero() {
     return (
-        <section className="relative overflow-hidden bg-cpdd-neutral-950 text-cpdd-neutral-50">
-            <div className="container grid grid-cols-1 items-center gap-10 py-12 sm:py-20 lg:min-h-[calc(100svh-104px)] lg:grid-cols-[minmax(0,434px)_minmax(0,1fr)] lg:gap-16 lg:py-20">
-                <div className="relative z-10 flex w-full flex-col items-start">
-                    <h1 className="mb-6 w-full max-w-108 font-heading text-400 font-semibold text-cpdd-orange-500 sm:text-500 lg:text-600">
+        <section className="bg-cpdd-neutral-950 text-cpdd-neutral-50">
+            <div className="container lg:flex lg:items-center lg:gap-16">
+                <div className="lg:basis-108 py-7 md:py-46">
+                    <h1 className="mb-4 lg:mb-6 text-cpdd-orange-500 font-heading font-semibold text-400 md:text-500 lg:text-600">
                         Tecnologia nas mãos de quem trabalha.
                     </h1>
-                    <div className="relative mx-auto w-full max-w-215 mb-6 block lg:hidden">
-                        <Image
-                            src={imageSrc}
-                            alt={imageAlt}
-                            width={861}
-                            height={609}
-                            className="h-auto w-full"
-                        />
-                    </div>
-                    <p className="mb-6 w-full max-w-md body-lg font-normal">
+                    <Image
+                        src={imageSrc}
+                        alt={imageAlt}
+                        width={861}
+                        height={609}
+                        className="block lg:hidden mx-auto mb-4"
+                    />
+                    <p className="mb-6 body-sm text-sm md:body-md lg:body-lg">
                         O CPDD organiza designers, desenvolvedores e profissionais de gestão que
                         acreditam que tecnologia deve servir à classe trabalhadora, não ao mercado.
                         Se você compartilha dessa visão, esse é o seu lugar.
                     </p>
-                    <div className="flex w-full max-w-108 flex-col items-start gap-4">
+                    <div className="flex flex-col items-start gap-4">
                         <AnalyticsLink
                             analyticsParams={{ eventName: "cta_apoiase_click", ctaLocation: "hero", ctaDesc: "Apoia.se" }}
                             href={linkApoiase}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="button-lg flex h-10 w-full items-center justify-center rounded-full border-2 border-cpdd-orange-500 px-12 py-1 text-cpdd-orange-500 transition-transform hover:scale-125 hover:md:scale-110"
+                            className="button-lg h-10 w-full flex items-center justify-center rounded-full border-2 px-12 py-1 border-cpdd-orange-500 text-cpdd-orange-500 transition-transform hover:scale-125 hover:md:scale-110"
                         >
                             <ApoiaseLogo className="w-25 fill-current" />
                         </AnalyticsLink>
@@ -44,20 +42,19 @@ export default function Hero() {
                             href={linkFormulario}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="button-lg flex h-10 w-full items-center justify-center rounded-full bg-cpdd-orange-500 px-12 py-1 text-cpdd-neutral-950 transition-transform hover:scale-125 hover:md:scale-110"
+                            className="button-lg h-10 w-full flex items-center justify-center rounded-full px-12 py-1 bg-cpdd-orange-500 text-cpdd-neutral-950 transition-transform hover:scale-125 hover:md:scale-110"
                         >
-                            <span className="w-full text-center">Quero participar</span>
+                            Quero participar
                         </AnalyticsLink>
                     </div>
                 </div>
-
-                <div className="relative mx-auto w-full max-w-215 hidden lg:block lg:justify-self-end">
+                <div className="flex-1">
                     <Image
                         src={imageSrc}
                         alt={imageAlt}
                         width={861}
                         height={609}
-                        className="h-auto w-full"
+                        className="hidden lg:block mx-auto"
                     />
                 </div>
             </div>
