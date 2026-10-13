@@ -3,6 +3,7 @@ import ApoiaseLogo from "@components/common/ApoiaseLogo";
 import { AnalyticsLink } from "@lib/analytics";
 
 const imageSrc = "/foice_martelo.png";
+const imageAlt = "Foice e martelo projetados sobre dois smartphones na diagonal";
 const linkApoiase = "https://apoia.se/cpdd";
 const linkFormulario = "https://cpdd.notion.site/372c5f6d25f880fdb91bca16c5ad1ec4?pvs=105";
 
@@ -11,31 +12,19 @@ export default function Hero() {
         <section className="relative overflow-hidden bg-cpdd-neutral-950 text-cpdd-neutral-50">
             <div className="container grid grid-cols-1 items-center gap-10 py-12 sm:py-20 lg:min-h-[calc(100svh-104px)] lg:grid-cols-[minmax(0,434px)_minmax(0,1fr)] lg:gap-16 lg:py-20">
                 <div className="relative z-10 flex w-full flex-col items-start">
-                    <h1
-                        className="mb-6 w-full max-w-[434px] text-[44px] leading-[43px] text-cpdd-orange-500 sm:text-[50px] sm:leading-[49px] lg:h-[114px] lg:text-[58px] lg:leading-[57px]"
-                        style={{
-                            fontFamily: "var(--font-barlow-condensed), sans-serif",
-                            fontWeight: 600,
-                        }}
-                    >
+                    <h1 className="mb-6 w-full max-w-108 font-heading text-400 font-semibold text-cpdd-orange-500 sm:text-500 lg:text-600">
                         Tecnologia nas mãos de quem trabalha.
                     </h1>
-                    <div className="relative mx-auto w-full max-w-[861px] mb-6 block lg:hidden">
+                    <div className="relative mx-auto w-full max-w-215 mb-6 block lg:hidden">
                         <Image
                             src={imageSrc}
-                            alt="Foice e martelo projetados sobre dois smartphones na diagonal"
+                            alt={imageAlt}
                             width={861}
                             height={609}
-                            priority
                             className="h-auto w-full"
                         />
                     </div>
-                    <p className="mb-6 w-full max-w-md body-lg"
-                        style={{
-                                fontFamily: "var(--font-slabo-27px), sans-serif",
-                                fontWeight: 400,
-                            }}
-                        >
+                    <p className="mb-6 w-full max-w-md body-lg font-normal">
                         O CPDD organiza designers, desenvolvedores e profissionais de gestão que
                         acreditam que tecnologia deve servir à classe trabalhadora, não ao mercado.
                         Se você compartilha dessa visão, esse é o seu lugar.
@@ -62,13 +51,12 @@ export default function Hero() {
                     </div>
                 </div>
 
-                <div className="relative mx-auto w-full max-w-[861px] hidden lg:block lg:justify-self-end">
+                <div className="relative mx-auto w-full max-w-215 hidden lg:block lg:justify-self-end">
                     <Image
                         src={imageSrc}
-                        alt="Foice e martelo projetados sobre dois smartphones na diagonal"
+                        alt={imageAlt}
                         width={861}
                         height={609}
-                        priority
                         className="h-auto w-full"
                     />
                 </div>
