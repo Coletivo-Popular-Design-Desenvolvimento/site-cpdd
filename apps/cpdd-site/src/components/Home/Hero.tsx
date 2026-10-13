@@ -11,7 +11,7 @@ export default function Hero() {
     return (
         <section className="bg-cpdd-neutral-950 text-cpdd-neutral-50">
             <div className="container lg:flex lg:items-center lg:gap-16">
-                <div className="lg:basis-108 py-7 md:py-46">
+                <div className="lg:basis-108 py-7 lg:py-46">
                     <h1 className="mb-4 lg:mb-6 text-cpdd-orange-500 font-heading font-semibold text-400 md:text-500 lg:text-600">
                         Tecnologia nas mãos de quem trabalha.
                     </h1>
