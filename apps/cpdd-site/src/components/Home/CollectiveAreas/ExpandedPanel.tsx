@@ -54,6 +54,14 @@ export function ExpandedPanel({ id, panel, isActive, isMobileActive }: Readonly<
                     fill
                     className="object-cover"
                 />
+                <a
+                    className="absolute top-2 left-4 w-min font-heading uppercase font-medium lg:font-bold text-cpdd-neutral-950 text-sm lg:text-300 leading-none"
+                    href={panel.imageLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    {panel.imageDesc}
+                </a>
             </div>
         </div>
     )
