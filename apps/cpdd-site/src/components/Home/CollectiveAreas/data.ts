@@ -19,6 +19,7 @@ export const panels: Panel[] = [
         ],
         image: '/area-desenvolvimento.png',
         imageDesc: 'Kateryna Yushchenko',
+        imageLink: 'https://pt.wikipedia.org/wiki/Kateryna_Yushchenko',
     },
     {
         id: 1,
@@ -36,6 +37,7 @@ export const panels: Panel[] = [
         ],
         image: '/area-design.png',
         imageDesc: 'Alexander Rodchenko',
+        imageLink: 'https://pt.wikipedia.org/wiki/Alexander_Rodchenko',
     },
     {
         id: 2,
@@ -54,6 +56,7 @@ export const panels: Panel[] = [
         ],
         image: '/area-comunicacao.png',
         imageDesc: 'Antonio Gramsci',
+        imageLink: 'https://pt.wikipedia.org/wiki/Antonio_Gramsci',
     },
     {
         id: 3,
@@ -70,6 +73,7 @@ export const panels: Panel[] = [
         ],
         image: '/area-gestao.png',
         imageDesc: 'Rosa Luxemburgo',
+        imageLink: 'https://pt.wikipedia.org/wiki/Rosa_Luxemburgo',
     },
     {
         id: 4,
@@ -86,6 +90,7 @@ export const panels: Panel[] = [
         ],
         image: '/area-educacional.png',
         imageDesc: 'Paulo Freire',
+        imageLink: 'https://pt.wikipedia.org/wiki/Paulo_Freire',
     },
     {
         id: 5,
@@ -103,5 +108,6 @@ export const panels: Panel[] = [
         ],
         image: '/area-acolhimento.png',
         imageDesc: 'Frantz Fanon',
+        imageLink: 'https://pt.wikipedia.org/wiki/Frantz_Fanon',
     }
 ];

@@ -9,4 +9,5 @@ export interface Panel {
     activities: string[]
     image: string
     imageDesc: string
+    imageLink: string
 }
