@@ -19,9 +19,9 @@ export default function Navbar() {
     return (
         <header
             className={
-                "relative lg:bg-cpdd-orange-500 lg:text-cpdd-neutral-950"
-                + " before:w-full before:h-1 before:absolute before:top-0 before:bg-cpdd-neutral-950 before:z-1 lg:before:h-4"
-                + (isMenuOpen ? " bg-cpdd-neutral-950 text-cpdd-orange-500" : " bg-cpdd-orange-500 text-cpdd-neutral-950")
+                "relative lg:bg-cpdd-neutral-950 lg:text-cpdd-neutral-950"
+                + " before:w-full before:h-1 before:absolute before:top-0 before:bg-cpdd-orange-500 before:z-1 lg:before:h-4"
+                + (isMenuOpen ? " bg-cpdd-neutral-950 text-cpdd-orange-500" : " bg-cpdd-neutral-950 text-cpdd-neutral-950")
             }
         >
             <div className="container flex justify-between gap-16 lg:gap-32">
@@ -30,8 +30,8 @@ export default function Navbar() {
                         "relative"
                         + " before:w-screen before:h-full before:absolute before:right-full before:top-0 before:bg-inherit"
                         + " after:h-full after:clip-rounded-wedge after:absolute after:left-full after:top-0 after:bg-inherit"
-                        + (isMenuOpen ? " bg-cpdd-orange-500 text-cpdd-neutral-950" : " bg-cpdd-neutral-950 text-cpdd-orange-500")
-                        + (pathname === "/" ? " lg:bg-cpdd-neutral-950 lg:text-cpdd-orange-500" : " lg:bg-cpdd-orange-500 lg:text-cpdd-neutral-950")
+                        + (isMenuOpen ? " bg-cpdd-orange-500 text-cpdd-neutral-950" : " bg-cpdd-orange-500 text-cpdd-neutral-950")
+                        + (pathname === "/" ? " lg:bg-cpdd-orange-500 lg:text-cpdd-neutral-950" : " lg:bg-cpdd-orange-500 lg:text-cpdd-neutral-950")
                     }
                 >
                     <Link
