@@ -16,7 +16,7 @@ export function ExpandedPanel({ panel, isActive, isMobileActive }: Readonly<Expa
 
     return (
         <div
-            className={`overflow-hidden transition-[max-height] duration-500 ease-in-out lg:max-h-none lg:flex-1 lg:flex lg:flex-row lg:rounded-2xl ${mobileHeightClass} ${desktopPointerClass}`}
+            className={`overflow-hidden transition-[max-height] duration-500 ease-in-out flex lg:max-h-none lg:flex-1 lg:rounded-2xl ${mobileHeightClass} ${desktopPointerClass}`}
             aria-hidden={!isMobileActive && !isActive}
             style={{
                 backgroundColor: panel.panelColor,
@@ -24,19 +24,19 @@ export function ExpandedPanel({ panel, isActive, isMobileActive }: Readonly<Expa
             }}
         >
             <div
-                className="relative flex flex-col justify-center gap-4 p-6 z-10 w-full xl:w-[70%] shrink-0"
+                className="flex flex-col justify-center gap-4 p-6 z-10 flex-1"
             >
                 <div className={`flex flex-col gap-4 lg:transition-opacity ${contentFadeClass}`}>
-                    <h3 className="subheading-md font-semibold">
+                    <h3 className="subheading-sm md:subheading-md font-semibold">
                         {panel.title}
                     </h3>
-                    <p className="body-md leading-relaxed">
+                    <p className="body-sm md:body-md leading-relaxed">
                         {panel.description}
                     </p>
-                    <h4 className="subheading-md font-semibold mt-2">
+                    <h4 className="subheading-sm md:subheading-md font-semibold mt-2">
                         {panel.activitiesTitle}
                     </h4>
-                    <ul className="body-md list-disc pl-5 space-y-1">
+                    <ul className="body-sm md:body-md list-disc pl-5 space-y-1">
                         {panel.activities.map((a, index) => (
                             <li key={`${a}-${index}`}>{a}</li>
                         ))}
@@ -45,15 +45,15 @@ export function ExpandedPanel({ panel, isActive, isMobileActive }: Readonly<Expa
             </div>
 
             {/* Desktop image */}
-            <div className="hidden xl:block lg:relative flex-1 min-w-0">
+            <div className="relative basis-3/10 shrink-0 h-90 lg:hidden xl:block xl:h-auto">
                 <Image
                     src={panel.image || "/placeholder.svg"}
                     alt={`${panel.title} - ${panel.activitiesTitle}`}
                     fill
-                    className="object-cover"
+                    className="object-cover rounded-s-3xl lg:rounded-none"
                 />
                 <a
-                    className="absolute top-2 left-4 w-min font-heading uppercase font-medium lg:font-bold text-cpdd-neutral-950 text-sm lg:text-300 leading-none"
+                    className="absolute top-2 left-4 w-min font-heading uppercase font-medium md:font-semibold lg:font-bold text-cpdd-neutral-950 text-sm md:text-200 lg:text-300 leading-none"
                     href={panel.imageLink}
                     target="_blank"
                     rel="noopener noreferrer"
