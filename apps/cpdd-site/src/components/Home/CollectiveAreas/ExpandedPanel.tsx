@@ -18,13 +18,13 @@ export function ExpandedPanel({ panel, isActive, isMobileActive }: Readonly<Expa
         <div
             className={`overflow-hidden transition-[max-height] duration-500 ease-in-out lg:max-h-none lg:flex-1 lg:flex lg:flex-row lg:rounded-2xl ${mobileHeightClass} ${desktopPointerClass}`}
             aria-hidden={!isMobileActive && !isActive}
+            style={{
+                backgroundColor: panel.panelColor,
+                color: panel.textColor,
+            }}
         >
             <div
-                className="relative flex flex-col justify-center gap-4 p-8 z-10 w-full xl:w-[70%] shrink-0"
-                style={{
-                    backgroundColor: panel.panelColor,
-                    color: panel.textColor,
-                }}
+                className="relative flex flex-col justify-center gap-4 p-6 z-10 w-full xl:w-[70%] shrink-0"
             >
                 <div className={`flex flex-col gap-4 lg:transition-opacity ${contentFadeClass}`}>
                     <h3 className="subheading-md font-semibold">

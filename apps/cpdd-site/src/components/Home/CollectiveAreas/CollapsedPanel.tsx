@@ -9,15 +9,15 @@ interface CollapsedPanelProps {
 export function CollapsedPanel({ panel, isMobileActive }: Readonly<CollapsedPanelProps>) {
     return (
         <span
-            className="flex flex-row lg:flex-col items-center justify-start lg:justify-between gap-4 px-6 lg:px-0 py-4 lg:py-6 w-full lg:w-[90px] h-auto lg:h-full shrink-0 transition-colors duration-500 ease-in-out lg:bg-transparent!"
+            className="flex flex-row lg:flex-col items-center justify-start lg:justify-between gap-4 px-6 lg:px-0 py-3 lg:py-6 w-full lg:w-[90px] h-auto lg:h-full shrink-0 transition-colors duration-500 ease-in-out lg:bg-transparent!"
             style={{
                 backgroundColor: isMobileActive ? panel.panelColor : undefined,
             }}
         >
             {/* Mobile: horizontal text — grows & recolors when active */}
             <span
-                className={`lg:hidden font-semibold tracking-wider uppercase transition-all duration-500 ease-in-out ${
-                    isMobileActive ? "heading-md" : "heading-sm"
+                className={`lg:hidden transition-all duration-500 ease-in-out ${
+                    isMobileActive ? "heading-md font-semibold!" : "heading-sm font-normal!"
                 }`}
                 style={{ color: isMobileActive ? panel.textColor : "var(--color-cpdd-neutral-50)" }}
             >
@@ -36,7 +36,7 @@ export function CollapsedPanel({ panel, isMobileActive }: Readonly<CollapsedPane
                 style={{ backgroundColor: panel.panelColor }}
             />
             <span
-                className="hidden lg:block text-cpdd-neutral-50 tracking-wider rotate-180 transition-[font-size] duration-300 ease-in-out heading-md group-hover:heading-lg"
+                className="hidden lg:block text-cpdd-neutral-50 rotate-180 transition-[font-size] duration-300 ease-in-out heading-md group-hover:heading-lg"
                 style={{ writingMode: "vertical-lr" }}
             >
                 {panel.label}
