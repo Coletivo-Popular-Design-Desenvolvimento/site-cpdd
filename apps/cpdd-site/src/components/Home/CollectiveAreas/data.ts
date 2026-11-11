@@ -17,7 +17,7 @@ export const panels: Panel[] = [
             'Desenvolvimento de soluções tecnológicas.',
             'Pesquisa de novas tecnologias abertas para levantar casos de uso que ajudem em nossa luta.'
         ],
-        image: '/area-desenvolvimento.png',
+        image: '/area-desenvolvimento.webp',
         imageDesc: 'Kateryna Yushchenko',
         imageLink: 'https://pt.wikipedia.org/wiki/Kateryna_Yushchenko',
     },
@@ -35,7 +35,7 @@ export const panels: Panel[] = [
             'Reforçar o Design Universal incluindo todes;',
             'Construção constante da nossa identidade visual;'
         ],
-        image: '/area-design.png',
+        image: '/area-design.webp',
         imageDesc: 'Alexander Rodchenko',
         imageLink: 'https://pt.wikipedia.org/wiki/Alexander_Rodchenko',
     },
@@ -54,7 +54,7 @@ export const panels: Panel[] = [
             'Eventos: divulgação, cobertura ao vivo e follow-up;',
             'Produtos: criação de materiais gráficos, camisetas e brindes;'
         ],
-        image: '/area-comunicacao.png',
+        image: '/area-comunicacao.webp',
         imageDesc: 'Antonio Gramsci',
         imageLink: 'https://pt.wikipedia.org/wiki/Antonio_Gramsci',
     },
@@ -71,7 +71,7 @@ export const panels: Panel[] = [
             'Treinamentos sobre metodologia ágeis para otimizar a entrega de projetos;',
             'Atuar diretamente nos times de desenvolvimento das soluções planejadas.'
         ],
-        image: '/area-gestao.png',
+        image: '/area-gestao.webp',
         imageDesc: 'Rosa Luxemburgo',
         imageLink: 'https://pt.wikipedia.org/wiki/Rosa_Luxemburgo',
     },
@@ -88,7 +88,7 @@ export const panels: Panel[] = [
             'Treinamentos sobre metodologia ágeis para otimizar a entrega de projetos;',
             'Atuar diretamente nos times de desenvolvimento das soluções planejadas.'
         ],
-        image: '/area-educacional.png',
+        image: '/area-educacional.webp',
         imageDesc: 'Paulo Freire',
         imageLink: 'https://pt.wikipedia.org/wiki/Paulo_Freire',
     },
@@ -106,7 +106,7 @@ export const panels: Panel[] = [
             'Acompanhamento de recrutamento de noves camarades;',
             'A reunião de Boas-Vindas;'
         ],
-        image: '/area-acolhimento.png',
+        image: '/area-acolhimento.webp',
         imageDesc: 'Frantz Fanon',
         imageLink: 'https://pt.wikipedia.org/wiki/Frantz_Fanon',
     }
