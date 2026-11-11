@@ -35,6 +35,7 @@ export default function Navbar() {
                     }
                 >
                     <Link
+                        aria-label="Voltar para a página inicial"
                         className="block py-3 lg:py-6 isolate"
                         href="/"
                     >

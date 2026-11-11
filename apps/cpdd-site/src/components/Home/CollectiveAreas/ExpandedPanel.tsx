@@ -3,11 +3,12 @@ import type { Panel } from "./types"
 
 interface ExpandedPanelProps {
     panel: Panel
+    id: string
     isActive: boolean
     isMobileActive: boolean
 }
 
-export function ExpandedPanel({ panel, isActive, isMobileActive }: Readonly<ExpandedPanelProps>) {
+export function ExpandedPanel({ id, panel, isActive, isMobileActive }: Readonly<ExpandedPanelProps>) {
     const mobileHeightClass = isMobileActive ? "max-h-[2000px]" : "max-h-0"
     const desktopPointerClass = isActive ? "" : "lg:pointer-events-none"
     const contentFadeClass = isActive
@@ -22,6 +23,7 @@ export function ExpandedPanel({ panel, isActive, isMobileActive }: Readonly<Expa
                 backgroundColor: panel.panelColor,
                 color: panel.textColor,
             }}
+            id={id}
         >
             <div
                 className="flex flex-col lg:justify-center gap-4 p-6 z-10 flex-1"

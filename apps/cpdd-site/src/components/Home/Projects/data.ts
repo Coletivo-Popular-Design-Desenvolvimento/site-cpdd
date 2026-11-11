@@ -1,25 +1,31 @@
 export const projects = [
     {
         id: 1,
-        title: 'Nome do projeto',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel sapien eget nunc efficitur varius.',
-        image: 'https://picsum.photos/seed/project1/800/600',
+        title: 'Checkin',
+        description: 'O Checkin transforma participação real em dado, e o dado em base para decidir. Sem número, vale a opinião de quem fala mais alto.',
+        image: '/projeto-checkin.webp',
+        imageAlt: 'A imagem é uma pintura de Lênin diante do mapa do GOELRO',
+        imageDesc: 'Leonid Chmatko, Lênin diante do mapa do GOELRO, 1957. Retrata o plano de eletrificação apresentado ao Congresso dos Sovietes em 1920, dado levantado no país inteiro virando decisão.',
         publishedAt: '01/04/2026',
         link: '#'
     },
     {
         id: 2,
-        title: 'Nome do projeto 2',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel sapien eget nunc efficitur varius.',
-        image: 'https://picsum.photos/seed/project2/800/600',
+        title: 'Jabuti',
+        description: 'Votar não é decidir. O Jabuti mostra o que o Congresso aprova e quem ganha com isso, para você ver a quem essa democracia serve.',
+        image: '/projeto-jabuti.webp',
+        imageAlt: 'A imagem é uma pintura da assembleia de organização do kolkhoz',
+        imageDesc: 'V. Dilka, Assembleia de organização do kolkhoz, entre 1927 e 1930. Retrata camponeses reunidos para fundar uma fazenda coletiva, decidindo juntos o destino da terra onde vivem.',
         publishedAt: '01/04/2026',
         link: '#'
     },
     {
         id: 3,
-        title: 'Nome do projeto 3',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel sapien eget nunc efficitur varius.',
-        image: 'https://picsum.photos/seed/project3/800/600',
+        title: 'Hackathon',
+        description: 'Tecnologia não nasce neutra, serve a quem a controla. No Hackathon a gente abre as portas e constrói junto, em dias, o que o mercado não faz por quem precisa.',
+        image: '/projeto-hackathon.webp',
+        imageAlt: 'A imagem é uma pintura dos Rabfakovtsy',
+        imageDesc: 'Ilya Vasiltchenko, Rabfakovtsy, 1971. Retrata os rabfaks, cursos que levavam operários sem escolaridade formal para dentro das universidades.',
         publishedAt: '01/04/2026',
         link: '#'
     },

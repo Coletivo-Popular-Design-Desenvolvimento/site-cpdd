@@ -89,3 +89,7 @@
 @utility body-alt-md {
   @apply text-200 font-body-alt;
 }
+
+@utility body-alt-sm {
+  @apply text-100 font-body-alt;
+}
