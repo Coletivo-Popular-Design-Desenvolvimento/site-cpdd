@@ -112,10 +112,10 @@ export function CollectiveAreas() {
                 xPosition="left"
                 yPosition="bottom"
             />
-            <h2 className="container isolate heading-sm md:display-md pt-6 md:pt-11 mb-4" id="areas-do-coletivo-heading">
+            <h2 className="container isolate heading-sm md:display-md pt-4 lg:pt-6" id="areas-do-coletivo-heading">
                 Áreas do Coletivo
             </h2>
-            <div className="lg:container lg:my-6 flex flex-col lg:flex-row lg:h-[640px] lg:gap-6 lg:rounded-2xl overflow-hidden">
+            <div className="lg:container my-6 flex flex-col lg:flex-row lg:h-[640px] lg:gap-6 lg:rounded-2xl overflow-hidden">
                 {panels.map((panel, index) => (
                     <AccordionPanel
                         key={panel.id}

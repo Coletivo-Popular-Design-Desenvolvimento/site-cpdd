@@ -24,16 +24,16 @@ export function ExpandedPanel({ panel, isActive, isMobileActive }: Readonly<Expa
             }}
         >
             <div
-                className="flex flex-col justify-center gap-4 p-6 z-10 flex-1"
+                className="flex flex-col lg:justify-center gap-4 p-6 z-10 flex-1"
             >
                 <div className={`flex flex-col gap-4 lg:transition-opacity ${contentFadeClass}`}>
-                    <h3 className="subheading-sm md:subheading-md font-semibold">
+                    <h3 className="subheading-sm md:subheading-md font-semibold!">
                         {panel.title}
                     </h3>
                     <p className="body-sm md:body-md leading-relaxed">
                         {panel.description}
                     </p>
-                    <h4 className="subheading-sm md:subheading-md font-semibold mt-2">
+                    <h4 className="subheading-sm md:subheading-md font-semibold! mt-2">
                         {panel.activitiesTitle}
                     </h4>
                     <ul className="body-sm md:body-md list-disc pl-5 space-y-1">
