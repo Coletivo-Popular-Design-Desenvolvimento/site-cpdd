@@ -24,18 +24,19 @@ export function ExpandedPanel({ id, panel, isActive, isMobileActive }: Readonly<
                 color: panel.textColor,
             }}
             id={id}
+            inert={!isMobileActive && !isActive}
         >
             <div
                 className="flex flex-col lg:justify-center gap-4 p-6 z-10 flex-1"
             >
                 <div className={`flex flex-col gap-4 lg:transition-opacity ${contentFadeClass}`}>
-                    <h3 className="subheading-sm md:subheading-md font-semibold!">
+                    <h3 className="text-xl font-semibold font-heading md:heading-md">
                         {panel.title}
                     </h3>
                     <p className="body-sm md:body-md leading-relaxed">
                         {panel.description}
                     </p>
-                    <h4 className="subheading-sm md:subheading-md font-semibold! mt-2">
+                    <h4 className="text-xl font-semibold font-heading md:heading-md mt-2">
                         {panel.activitiesTitle}
                     </h4>
                     <ul className="body-sm md:body-md list-disc pl-5 space-y-1">
@@ -50,7 +51,7 @@ export function ExpandedPanel({ id, panel, isActive, isMobileActive }: Readonly<
             <div className="relative basis-3/10 shrink-0 h-90 lg:hidden xl:block xl:h-auto">
                 <Image
                     src={panel.image || "/placeholder.svg"}
-                    alt={`${panel.title} - ${panel.activitiesTitle}`}
+                    alt={`Retrato de ${panel.imageDesc}`}
                     fill
                     className="object-cover rounded-s-3xl lg:rounded-none"
                 />

@@ -104,7 +104,7 @@ export function CollectiveAreas() {
     }, [])
 
     return (
-        <section className="relative w-full overflow-hidden bg-cpdd-neutral-950" aria-labelledby="areas-do-coletivo-heading">
+        <section className="relative w-full overflow-hidden bg-cpdd-neutral-950 text-cpdd-neutral-50" aria-labelledby="areas-do-coletivo-heading">
             <WaveDivider
                 backgroundClassName="bg-cpdd-neutral-950"
                 className="bg-cpdd-neutral-50 absolute inset-x-0 h-12 md:h-25"
