@@ -104,7 +104,7 @@ export function CollectiveAreas() {
     }, [])
 
     return (
-        <section className="relative w-full overflow-hidden bg-cpdd-neutral-950" aria-labelledby="areas-do-coletivo-heading">
+        <section className="relative w-full overflow-hidden bg-cpdd-neutral-950 text-cpdd-neutral-50" aria-labelledby="areas-do-coletivo-heading">
             <WaveDivider
                 backgroundClassName="bg-cpdd-neutral-950"
                 className="bg-cpdd-neutral-50 absolute inset-x-0 h-12 md:h-25"
@@ -112,10 +112,10 @@ export function CollectiveAreas() {
                 xPosition="left"
                 yPosition="bottom"
             />
-            <h2 className="text-cpdd-orange-500 container isolate heading-sm md:display-md pt-6 md:pt-11 mb-4" id="areas-do-coletivo-heading">
+            <h2 className="container isolate heading-sm md:display-md pt-4 lg:pt-6" id="areas-do-coletivo-heading">
                 Áreas do Coletivo
             </h2>
-            <div className="lg:container lg:my-6 flex flex-col lg:flex-row lg:h-[640px] lg:gap-6 lg:rounded-2xl overflow-hidden">
+            <div className="lg:container my-6 flex flex-col lg:flex-row lg:h-[640px] lg:gap-6 lg:rounded-2xl overflow-hidden">
                 {panels.map((panel, index) => (
                     <AccordionPanel
                         key={panel.id}
