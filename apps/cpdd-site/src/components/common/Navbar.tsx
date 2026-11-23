@@ -19,9 +19,8 @@ export default function Navbar() {
     return (
         <header
             className={
-                "relative lg:bg-cpdd-orange-500 lg:text-cpdd-neutral-950"
-                + " before:w-full before:h-1 before:absolute before:top-0 before:bg-cpdd-neutral-950 before:z-1 lg:before:h-4"
-                + (isMenuOpen ? " bg-cpdd-neutral-950 text-cpdd-orange-500" : " bg-cpdd-orange-500 text-cpdd-neutral-950")
+                "relative bg-cpdd-neutral-950 text-cpdd-orange-500"
+                + " before:w-full before:h-1 before:absolute before:top-0 before:bg-cpdd-orange-500 before:z-1 lg:before:h-4"
             }
         >
             <div className="container flex justify-between gap-16 lg:gap-32">
@@ -30,8 +29,12 @@ export default function Navbar() {
                         "relative"
                         + " before:w-screen before:h-full before:absolute before:right-full before:top-0 before:bg-inherit"
                         + " after:h-full after:clip-rounded-wedge after:absolute after:left-full after:top-0 after:bg-inherit"
-                        + (isMenuOpen ? " bg-cpdd-orange-500 text-cpdd-neutral-950" : " bg-cpdd-neutral-950 text-cpdd-orange-500")
-                        + (pathname === "/" ? " lg:bg-cpdd-neutral-950 lg:text-cpdd-orange-500" : " lg:bg-cpdd-orange-500 lg:text-cpdd-neutral-950")
+                        + (isMenuOpen || pathname === "/"
+                            ? " bg-cpdd-orange-500 text-cpdd-neutral-950"
+                            : " bg-cpdd-neutral-950 text-cpdd-orange-500")
+                        + (pathname === "/"
+                            ? " lg:bg-cpdd-orange-500 lg:text-cpdd-neutral-950"
+                            : " lg:bg-cpdd-neutral-950 lg:text-cpdd-orange-500")
                     }
                 >
                     <Link
@@ -54,7 +57,7 @@ export default function Navbar() {
                     <HamburgerIcon className="fill-current"/>
                 </button>
                 <nav
-                    hidden={true} // escondido enquanto não houver outras paginas
+                    hidden={true} // Oculto até existirem páginas internas; revisar as cores do menu desktop antes de habilitar.
                     id="navbar-menu"
                     className={
                         "absolute top-full inset-x-0 lg:static lg:block lg:bg-cpdd-orange-500 lg:text-cpdd-neutral-950"
